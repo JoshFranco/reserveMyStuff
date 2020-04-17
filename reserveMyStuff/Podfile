@@ -6,7 +6,8 @@ target 'reserveMyStuff' do
   use_frameworks!
 
   pod 'IoniconsSwift', :git => 'http://github.com/tidwall/IoniconsSwift.git', :branch => 'master' # Icon source lib
-  pod 'Kingfisher', '~> 5.4.0' # async image fetching & cache
+  pod 'Kingfisher', '~> 5.4.0' # Async image fetching & cache
+  pod 'R.swift', '~> 5.1.0' # Get strong typed, autocompleted resources like images, fonts and segues in Swift projects
 
   target 'reserveMyStuffTests' do
     inherit! :search_paths

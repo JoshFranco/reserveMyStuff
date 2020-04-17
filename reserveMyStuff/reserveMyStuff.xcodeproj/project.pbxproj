@@ -44,6 +44,7 @@
 		DA3A4A64244A313400D7D660 /* MockSession.swift in Sources */ = {isa = PBXBuildFile; fileRef = DA3A4A4F244A313400D7D660 /* MockSession.swift */; };
 		DA3A4A66244A327800D7D660 /* NetworkingErrors.swift in Sources */ = {isa = PBXBuildFile; fileRef = DA3A4A65244A327800D7D660 /* NetworkingErrors.swift */; };
 		DA3A4A69244A360900D7D660 /* Result+Extension.swift in Sources */ = {isa = PBXBuildFile; fileRef = DA3A4A68244A360900D7D660 /* Result+Extension.swift */; };
+		DA7F5FDA244A58DD00D9D693 /* R.generated.swift in Sources */ = {isa = PBXBuildFile; fileRef = DA7F5FD9244A58DD00D9D693 /* R.generated.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -101,6 +102,7 @@
 		DA3A4A4F244A313400D7D660 /* MockSession.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = MockSession.swift; sourceTree = "<group>"; };
 		DA3A4A65244A327800D7D660 /* NetworkingErrors.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = NetworkingErrors.swift; sourceTree = "<group>"; };
 		DA3A4A68244A360900D7D660 /* Result+Extension.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "Result+Extension.swift"; sourceTree = "<group>"; };
+		DA7F5FD9244A58DD00D9D693 /* R.generated.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = R.generated.swift; sourceTree = SOURCE_ROOT; };
 		DF0094A84B71C05EFECCD25F /* Pods-reserveMyStuff.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-reserveMyStuff.release.xcconfig"; path = "Target Support Files/Pods-reserveMyStuff/Pods-reserveMyStuff.release.xcconfig"; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
@@ -194,6 +196,7 @@
 				DA3A4A03244A2CDF00D7D660 /* AppDelegate.swift */,
 				DA3A4A05244A2CDF00D7D660 /* SceneDelegate.swift */,
 				DA3A4A14244A2CE100D7D660 /* Info.plist */,
+				DA7F5FD9244A58DD00D9D693 /* R.generated.swift */,
 			);
 			path = reserveMyStuff;
 			sourceTree = "<group>";
@@ -351,6 +354,7 @@
 			buildConfigurationList = DA3A4A22244A2CE100D7D660 /* Build configuration list for PBXNativeTarget "reserveMyStuff" */;
 			buildPhases = (
 				590CEB0C97FEA32B15528C30 /* [CP] Check Pods Manifest.lock */,
+				DA7F5FD8244A580000D9D693 /* R Swift */,
 				DA3A49FC244A2CDF00D7D660 /* Sources */,
 				DA3A49FD244A2CDF00D7D660 /* Frameworks */,
 				DA3A49FE244A2CDF00D7D660 /* Resources */,
@@ -505,6 +509,26 @@
 			shellScript = "diff \"${PODS_PODFILE_DIR_PATH}/Podfile.lock\" \"${PODS_ROOT}/Manifest.lock\" > /dev/null\nif [ $? != 0 ] ; then\n    # print error to STDERR\n    echo \"error: The sandbox is not in sync with the Podfile.lock. Run 'pod install' or update your CocoaPods installation.\" >&2\n    exit 1\nfi\n# This output is used by Xcode 'outputs' to avoid re-running this script phase.\necho \"SUCCESS\" > \"${SCRIPT_OUTPUT_FILE_0}\"\n";
 			showEnvVarsInLog = 0;
 		};
+		DA7F5FD8244A580000D9D693 /* R Swift */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputFileListPaths = (
+			);
+			inputPaths = (
+				"$TEMP_DIR/rswift-lastrun",
+			);
+			name = "R Swift";
+			outputFileListPaths = (
+			);
+			outputPaths = (
+				$SRCROOT/R.generated.swift,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "\"$PODS_ROOT/R.swift/rswift\" generate \"$SRCROOT/R.generated.swift\"\n";
+		};
 /* End PBXShellScriptBuildPhase section */
 
 /* Begin PBXSourcesBuildPhase section */
@@ -514,6 +538,7 @@
 			files = (
 				DA3A4A62244A313400D7D660 /* URLSessionProvidable.swift in Sources */,
 				DA3A4A50244A313400D7D660 /* JXNetworkManager.swift in Sources */,
+				DA7F5FDA244A58DD00D9D693 /* R.generated.swift in Sources */,
 				DA3A4A61244A313400D7D660 /* NetworkRoutable.swift in Sources */,
 				DA3A4A33244A2DCE00D7D660 /* Navigatable.swift in Sources */,
 				DA3A4A5A244A313400D7D660 /* URLRequest+Common+Extension.swift in Sources */,
