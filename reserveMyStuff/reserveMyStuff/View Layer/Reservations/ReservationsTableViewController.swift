@@ -7,6 +7,7 @@
 //
 
 import UIKit
+import IoniconsSwift
 
 class ReservationsTableViewController: UITableViewController, Storyboarded, Navigatable {
     static var storyboard: Storyboards = .main
@@ -20,19 +21,43 @@ class ReservationsTableViewController: UITableViewController, Storyboarded, Navi
     override func viewDidLoad() {
         super.viewDidLoad()
         
-        self.view.backgroundColor = .purple
+        self.configUI()
+    }
+    
+    // MARK: - Actions
+    @objc private func addBtnPress() {
+        print("hit")
         
     }
     
-    // MARK: - Table view data source
-    override func numberOfSections(in tableView: UITableView) -> Int {
-        // #warning Incomplete implementation, return the number of sections
-        return 0
-    }
-    
+    // MARK: - Table view data source    
     override func tableView(_ tableView: UITableView, numberOfRowsInSection section: Int) -> Int {
-        // #warning Incomplete implementation, return the number of rows
-        return 0
+        return 3
     }
     
+    override func tableView(_ tableView: UITableView, cellForRowAt indexPath: IndexPath) -> UITableViewCell {
+        guard let cell = self.tableView.dequeueReusableCell(withIdentifier: "ReservationTableViewCell", for: indexPath) as? ReservationTableViewCell else {
+            return UITableViewCell()
+        }
+        
+        return cell
+    }
+}
+
+// MARK: - Private Methods
+private extension ReservationsTableViewController {
+    func configUI() {
+        self.title = R.string.localizable.myReservations().uppercased()
+        
+        self.navigationController?.navigationBar.titleTextAttributes = [NSAttributedString.Key.foregroundColor : UIColor.white]
+        self.navigationController?.navigationBar.barTintColor = R.color.babyBlue()
+
+        let addBtnItem = UIBarButtonItem(barButtonSystemItem: .add, target: self, action: #selector(addBtnPress))
+        addBtnItem.tintColor = .white
+        navigationItem.rightBarButtonItem = addBtnItem
+        
+        let reservationNib = UINib(nibName: "ReservationTableViewCell", bundle: nil)
+        self.tableView.register(reservationNib, forCellReuseIdentifier: "ReservationTableViewCell")
+        self.tableView.backgroundColor = R.color.offWhite()
+    }
 }

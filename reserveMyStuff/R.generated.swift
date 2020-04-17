@@ -114,6 +114,78 @@ struct R: Rswift.Validatable {
   }
   #endif
 
+  /// This `R.color` struct is generated, and contains static references to 6 colors.
+  struct color {
+    /// Color `babyBlue`.
+    static let babyBlue = Rswift.ColorResource(bundle: R.hostingBundle, name: "babyBlue")
+    /// Color `hardBlue`.
+    static let hardBlue = Rswift.ColorResource(bundle: R.hostingBundle, name: "hardBlue")
+    /// Color `offWhite`.
+    static let offWhite = Rswift.ColorResource(bundle: R.hostingBundle, name: "offWhite")
+    /// Color `subTitleGray`.
+    static let subTitleGray = Rswift.ColorResource(bundle: R.hostingBundle, name: "subTitleGray")
+    /// Color `textGray`.
+    static let textGray = Rswift.ColorResource(bundle: R.hostingBundle, name: "textGray")
+    /// Color `titleGray`.
+    static let titleGray = Rswift.ColorResource(bundle: R.hostingBundle, name: "titleGray")
+
+    #if os(iOS) || os(tvOS)
+    /// `UIColor(named: "babyBlue", bundle: ..., traitCollection: ...)`
+    @available(tvOS 11.0, *)
+    @available(iOS 11.0, *)
+    static func babyBlue(compatibleWith traitCollection: UIKit.UITraitCollection? = nil) -> UIKit.UIColor? {
+      return UIKit.UIColor(resource: R.color.babyBlue, compatibleWith: traitCollection)
+    }
+    #endif
+
+    #if os(iOS) || os(tvOS)
+    /// `UIColor(named: "hardBlue", bundle: ..., traitCollection: ...)`
+    @available(tvOS 11.0, *)
+    @available(iOS 11.0, *)
+    static func hardBlue(compatibleWith traitCollection: UIKit.UITraitCollection? = nil) -> UIKit.UIColor? {
+      return UIKit.UIColor(resource: R.color.hardBlue, compatibleWith: traitCollection)
+    }
+    #endif
+
+    #if os(iOS) || os(tvOS)
+    /// `UIColor(named: "offWhite", bundle: ..., traitCollection: ...)`
+    @available(tvOS 11.0, *)
+    @available(iOS 11.0, *)
+    static func offWhite(compatibleWith traitCollection: UIKit.UITraitCollection? = nil) -> UIKit.UIColor? {
+      return UIKit.UIColor(resource: R.color.offWhite, compatibleWith: traitCollection)
+    }
+    #endif
+
+    #if os(iOS) || os(tvOS)
+    /// `UIColor(named: "subTitleGray", bundle: ..., traitCollection: ...)`
+    @available(tvOS 11.0, *)
+    @available(iOS 11.0, *)
+    static func subTitleGray(compatibleWith traitCollection: UIKit.UITraitCollection? = nil) -> UIKit.UIColor? {
+      return UIKit.UIColor(resource: R.color.subTitleGray, compatibleWith: traitCollection)
+    }
+    #endif
+
+    #if os(iOS) || os(tvOS)
+    /// `UIColor(named: "textGray", bundle: ..., traitCollection: ...)`
+    @available(tvOS 11.0, *)
+    @available(iOS 11.0, *)
+    static func textGray(compatibleWith traitCollection: UIKit.UITraitCollection? = nil) -> UIKit.UIColor? {
+      return UIKit.UIColor(resource: R.color.textGray, compatibleWith: traitCollection)
+    }
+    #endif
+
+    #if os(iOS) || os(tvOS)
+    /// `UIColor(named: "titleGray", bundle: ..., traitCollection: ...)`
+    @available(tvOS 11.0, *)
+    @available(iOS 11.0, *)
+    static func titleGray(compatibleWith traitCollection: UIKit.UITraitCollection? = nil) -> UIKit.UIColor? {
+      return UIKit.UIColor(resource: R.color.titleGray, compatibleWith: traitCollection)
+    }
+    #endif
+
+    fileprivate init() {}
+  }
+
   /// This `R.file` struct is generated, and contains static references to 1 files.
   struct file {
     /// Resource file `GMDirectionsMock.json`.
@@ -123,6 +195,60 @@ struct R: Rswift.Validatable {
     static func gmDirectionsMockJson(_: Void = ()) -> Foundation.URL? {
       let fileResource = R.file.gmDirectionsMockJson
       return fileResource.bundle.url(forResource: fileResource)
+    }
+
+    fileprivate init() {}
+  }
+
+  /// This `R.nib` struct is generated, and contains static references to 1 nibs.
+  struct nib {
+    /// Nib `ReservationTableViewCell`.
+    static let reservationTableViewCell = _R.nib._ReservationTableViewCell()
+
+    #if os(iOS) || os(tvOS)
+    /// `UINib(name: "ReservationTableViewCell", in: bundle)`
+    @available(*, deprecated, message: "Use UINib(resource: R.nib.reservationTableViewCell) instead")
+    static func reservationTableViewCell(_: Void = ()) -> UIKit.UINib {
+      return UIKit.UINib(resource: R.nib.reservationTableViewCell)
+    }
+    #endif
+
+    static func reservationTableViewCell(owner ownerOrNil: AnyObject?, options optionsOrNil: [UINib.OptionsKey : Any]? = nil) -> ReservationTableViewCell? {
+      return R.nib.reservationTableViewCell.instantiate(withOwner: ownerOrNil, options: optionsOrNil)[0] as? ReservationTableViewCell
+    }
+
+    fileprivate init() {}
+  }
+
+  /// This `R.reuseIdentifier` struct is generated, and contains static references to 1 reuse identifiers.
+  struct reuseIdentifier {
+    /// Reuse identifier `ReservationTableViewCell`.
+    static let reservationTableViewCell: Rswift.ReuseIdentifier<ReservationTableViewCell> = Rswift.ReuseIdentifier(identifier: "ReservationTableViewCell")
+
+    fileprivate init() {}
+  }
+
+  /// This `R.string` struct is generated, and contains static references to 1 localization tables.
+  struct string {
+    /// This `R.string.localizable` struct is generated, and contains static references to 1 localization keys.
+    struct localizable {
+      /// Value: My Reservations
+      static let myReservations = Rswift.StringResource(key: "my-reservations", tableName: "Localizable", bundle: R.hostingBundle, locales: [], comment: nil)
+
+      /// Value: My Reservations
+      static func myReservations(preferredLanguages: [String]? = nil) -> String {
+        guard let preferredLanguages = preferredLanguages else {
+          return NSLocalizedString("my-reservations", bundle: hostingBundle, comment: "")
+        }
+
+        guard let (_, bundle) = localeBundle(tableName: "Localizable", preferredLanguages: preferredLanguages) else {
+          return "my-reservations"
+        }
+
+        return NSLocalizedString("my-reservations", bundle: bundle, comment: "")
+      }
+
+      fileprivate init() {}
     }
 
     fileprivate init() {}
@@ -147,6 +273,26 @@ struct _R: Rswift.Validatable {
     try storyboard.validate()
     #endif
   }
+
+  #if os(iOS) || os(tvOS)
+  struct nib {
+    struct _ReservationTableViewCell: Rswift.NibResourceType, Rswift.ReuseIdentifierType {
+      typealias ReusableType = ReservationTableViewCell
+
+      let bundle = R.hostingBundle
+      let identifier = "ReservationTableViewCell"
+      let name = "ReservationTableViewCell"
+
+      func firstView(owner ownerOrNil: AnyObject?, options optionsOrNil: [UINib.OptionsKey : Any]? = nil) -> ReservationTableViewCell? {
+        return instantiate(withOwner: ownerOrNil, options: optionsOrNil)[0] as? ReservationTableViewCell
+      }
+
+      fileprivate init() {}
+    }
+
+    fileprivate init() {}
+  }
+  #endif
 
   #if os(iOS) || os(tvOS)
   struct storyboard: Rswift.Validatable {
