@@ -1,0 +1,799 @@
+// !$*UTF8*$!
+{
+	archiveVersion = 1;
+	classes = {
+	};
+	objectVersion = 50;
+	objects = {
+
+/* Begin PBXBuildFile section */
+		03644CC41A3B7AA04D88EAE4C87973F5 /* Pods-reserveMyStuff-umbrella.h in Headers */ = {isa = PBXBuildFile; fileRef = 7CCBD85070CE404A513EF643AA30B2DE /* Pods-reserveMyStuff-umbrella.h */; settings = {ATTRIBUTES = (Public, ); }; };
+		2F487EB87B3B14C6EAE497A414EBA521 /* Foundation.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 436BAA54A31999B53B3CC7115C55FE50 /* Foundation.framework */; };
+		7141A40955F495B67E9F5D800977D9F9 /* IoniconsSwift-umbrella.h in Headers */ = {isa = PBXBuildFile; fileRef = F69158132D122838FF9DBFA71F2AFA97 /* IoniconsSwift-umbrella.h */; settings = {ATTRIBUTES = (Public, ); }; };
+		8A3CD2752D08F7A6CAC95E9538243F2B /* Pods-reserveMyStuffTests-dummy.m in Sources */ = {isa = PBXBuildFile; fileRef = E4D75779FFE3014CBB7A8DE35BF4B5C6 /* Pods-reserveMyStuffTests-dummy.m */; };
+		B2174B5E0564FB10C477026635B9AA40 /* IoniconsSwift-dummy.m in Sources */ = {isa = PBXBuildFile; fileRef = B1D7C785BEA474E67D562E54E22DDBF5 /* IoniconsSwift-dummy.m */; };
+		B34FA3E729F8781DF0F9EA9F934C4CEF /* ionicons.ttf in Resources */ = {isa = PBXBuildFile; fileRef = 94FAEC1C65626339E8F362D673E1C101 /* ionicons.ttf */; };
+		BE7B6C470B351B840C3A5982BDBD1812 /* Pods-reserveMyStuff-dummy.m in Sources */ = {isa = PBXBuildFile; fileRef = 481E63CE8663AB82DB702BEA7E3FC33C /* Pods-reserveMyStuff-dummy.m */; };
+		C9580CFE64D865E271FEEE410836B7FD /* Foundation.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 436BAA54A31999B53B3CC7115C55FE50 /* Foundation.framework */; };
+		E3371583BA8B90111812AA51A6A8140B /* UIKit.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 312B988EF117AE4DE76A268D970131FE /* UIKit.framework */; };
+		E895489CB35C02F3583B859B254D54D3 /* ionicons.swift in Sources */ = {isa = PBXBuildFile; fileRef = 19A03BC5A54BFDD1FE27BEEC4185544D /* ionicons.swift */; };
+		F40D8C4F0AD1CE5300D4B229B64A0223 /* Pods-reserveMyStuffTests-umbrella.h in Headers */ = {isa = PBXBuildFile; fileRef = 46BB46DEF633BF81AA275BB540373894 /* Pods-reserveMyStuffTests-umbrella.h */; settings = {ATTRIBUTES = (Public, ); }; };
+		FD8F9A3E9DE3BD8E622B16B130C44AFF /* Foundation.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 436BAA54A31999B53B3CC7115C55FE50 /* Foundation.framework */; };
+/* End PBXBuildFile section */
+
+/* Begin PBXContainerItemProxy section */
+		32EA657D5F5EBC0A1DF754E3D69D129C /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = BFDFE7DC352907FC980B868725387E98 /* Project object */;
+			proxyType = 1;
+			remoteGlobalIDString = 28580BA6189212B19A89367B55D3A51E;
+			remoteInfo = "Pods-reserveMyStuff";
+		};
+		9A18EFBCBCE9415A45E1009E3ADDBA40 /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = BFDFE7DC352907FC980B868725387E98 /* Project object */;
+			proxyType = 1;
+			remoteGlobalIDString = BD630CC7FA5BBF792863C643D778EFC8;
+			remoteInfo = IoniconsSwift;
+		};
+/* End PBXContainerItemProxy section */
+
+/* Begin PBXFileReference section */
+		04F9F0CBEB076B8B6A7C677D3F9DD832 /* Pods_reserveMyStuffTests.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_reserveMyStuffTests.framework; sourceTree = BUILT_PRODUCTS_DIR; };
+		19A03BC5A54BFDD1FE27BEEC4185544D /* ionicons.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; name = ionicons.swift; path = IoniconsSwift/ionicons.swift; sourceTree = "<group>"; };
+		26A5C7B7C227CCB294F900DA36300F7F /* Pods-reserveMyStuffTests.modulemap */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.module; path = "Pods-reserveMyStuffTests.modulemap"; sourceTree = "<group>"; };
+		27CE1662426345C4FD5997A9FCA78AC4 /* IoniconsSwift-Info.plist */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.plist.xml; path = "IoniconsSwift-Info.plist"; sourceTree = "<group>"; };
+		312B988EF117AE4DE76A268D970131FE /* UIKit.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = UIKit.framework; path = Platforms/iPhoneOS.platform/Developer/SDKs/iPhoneOS12.2.sdk/System/Library/Frameworks/UIKit.framework; sourceTree = DEVELOPER_DIR; };
+		39452D8E981E671EA4D9C9E19CA828BF /* Pods-reserveMyStuffTests-acknowledgements.markdown */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text; path = "Pods-reserveMyStuffTests-acknowledgements.markdown"; sourceTree = "<group>"; };
+		41640160E9A488A7612601D02E9CA349 /* Pods-reserveMyStuff-acknowledgements.markdown */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text; path = "Pods-reserveMyStuff-acknowledgements.markdown"; sourceTree = "<group>"; };
+		436BAA54A31999B53B3CC7115C55FE50 /* Foundation.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = Foundation.framework; path = Platforms/iPhoneOS.platform/Developer/SDKs/iPhoneOS12.2.sdk/System/Library/Frameworks/Foundation.framework; sourceTree = DEVELOPER_DIR; };
+		46BB46DEF633BF81AA275BB540373894 /* Pods-reserveMyStuffTests-umbrella.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; path = "Pods-reserveMyStuffTests-umbrella.h"; sourceTree = "<group>"; };
+		481E63CE8663AB82DB702BEA7E3FC33C /* Pods-reserveMyStuff-dummy.m */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.objc; path = "Pods-reserveMyStuff-dummy.m"; sourceTree = "<group>"; };
+		4E5F65AA7891C992F274E8C3E9E9666E /* Pods-reserveMyStuff-acknowledgements.plist */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.plist.xml; path = "Pods-reserveMyStuff-acknowledgements.plist"; sourceTree = "<group>"; };
+		560B6B5007AB5064B00387518BAC6A82 /* IoniconsSwift.modulemap */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.module; path = IoniconsSwift.modulemap; sourceTree = "<group>"; };
+		58A22898654CF49A5A980358193A9B70 /* IoniconsSwift.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = IoniconsSwift.framework; sourceTree = BUILT_PRODUCTS_DIR; };
+		5C1883AB3F1104248EB3AE66AE2DA9B7 /* Pods-reserveMyStuff.modulemap */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.module; path = "Pods-reserveMyStuff.modulemap"; sourceTree = "<group>"; };
+		7CCBD85070CE404A513EF643AA30B2DE /* Pods-reserveMyStuff-umbrella.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; path = "Pods-reserveMyStuff-umbrella.h"; sourceTree = "<group>"; };
+		7D2752110FC740A2B9773F85FC9EE1DC /* Pods-reserveMyStuff-Info.plist */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.plist.xml; path = "Pods-reserveMyStuff-Info.plist"; sourceTree = "<group>"; };
+		86AB04F4CAEDDB54D63A1282BDB28AD8 /* Pods-reserveMyStuff-frameworks.sh */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.script.sh; path = "Pods-reserveMyStuff-frameworks.sh"; sourceTree = "<group>"; };
+		94FAEC1C65626339E8F362D673E1C101 /* ionicons.ttf */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = file; name = ionicons.ttf; path = IoniconsSwift/ionicons.ttf; sourceTree = "<group>"; };
+		9D940727FF8FB9C785EB98E56350EF41 /* Podfile */ = {isa = PBXFileReference; explicitFileType = text.script.ruby; includeInIndex = 1; indentWidth = 2; name = Podfile; path = ../Podfile; sourceTree = SOURCE_ROOT; tabWidth = 2; xcLanguageSpecificationIdentifier = xcode.lang.ruby; };
+		A47759790941D8F69B2C49A0E177A51F /* Pods-reserveMyStuff.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; path = "Pods-reserveMyStuff.debug.xcconfig"; sourceTree = "<group>"; };
+		AB497908E1A6C1A795401CB2E1E96047 /* Pods-reserveMyStuffTests.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; path = "Pods-reserveMyStuffTests.debug.xcconfig"; sourceTree = "<group>"; };
+		B1D7C785BEA474E67D562E54E22DDBF5 /* IoniconsSwift-dummy.m */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.objc; path = "IoniconsSwift-dummy.m"; sourceTree = "<group>"; };
+		B50D8EA90DD14BCECA2997300ECB7CF5 /* Pods-reserveMyStuffTests-Info.plist */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.plist.xml; path = "Pods-reserveMyStuffTests-Info.plist"; sourceTree = "<group>"; };
+		BB348839FCBAE0DDE8842258D04F8C72 /* Pods-reserveMyStuff.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; path = "Pods-reserveMyStuff.release.xcconfig"; sourceTree = "<group>"; };
+		E4D75779FFE3014CBB7A8DE35BF4B5C6 /* Pods-reserveMyStuffTests-dummy.m */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.objc; path = "Pods-reserveMyStuffTests-dummy.m"; sourceTree = "<group>"; };
+		F1C0202247462DF83ECED63DD0571B7B /* Pods-reserveMyStuffTests.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; path = "Pods-reserveMyStuffTests.release.xcconfig"; sourceTree = "<group>"; };
+		F69158132D122838FF9DBFA71F2AFA97 /* IoniconsSwift-umbrella.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; path = "IoniconsSwift-umbrella.h"; sourceTree = "<group>"; };
+		F8CC6E609A3EEF8D4EDFE482323D97F8 /* Pods_reserveMyStuff.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_reserveMyStuff.framework; sourceTree = BUILT_PRODUCTS_DIR; };
+		FD80AAC10C6AB4460475F253132DAEE7 /* IoniconsSwift.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; path = IoniconsSwift.xcconfig; sourceTree = "<group>"; };
+		FF240CECB96029A5F64A49131E8CD054 /* IoniconsSwift-prefix.pch */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; path = "IoniconsSwift-prefix.pch"; sourceTree = "<group>"; };
+		FFC8EFCBAB16D93D5535A0566BC031CB /* Pods-reserveMyStuffTests-acknowledgements.plist */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.plist.xml; path = "Pods-reserveMyStuffTests-acknowledgements.plist"; sourceTree = "<group>"; };
+/* End PBXFileReference section */
+
+/* Begin PBXFrameworksBuildPhase section */
+		7CC57959D4650B5C0395EDC797DEED27 /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				C9580CFE64D865E271FEEE410836B7FD /* Foundation.framework in Frameworks */,
+				E3371583BA8B90111812AA51A6A8140B /* UIKit.framework in Frameworks */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		7D03A79E06DE4402D0CF681E8B801B75 /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				2F487EB87B3B14C6EAE497A414EBA521 /* Foundation.framework in Frameworks */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		E8DCB7BA2B8FD98874A8F19D6ED02E9D /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				FD8F9A3E9DE3BD8E622B16B130C44AFF /* Foundation.framework in Frameworks */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXFrameworksBuildPhase section */
+
+/* Begin PBXGroup section */
+		0B0853E101F916955E4FAD769D74AB69 /* Pods-reserveMyStuffTests */ = {
+			isa = PBXGroup;
+			children = (
+				26A5C7B7C227CCB294F900DA36300F7F /* Pods-reserveMyStuffTests.modulemap */,
+				39452D8E981E671EA4D9C9E19CA828BF /* Pods-reserveMyStuffTests-acknowledgements.markdown */,
+				FFC8EFCBAB16D93D5535A0566BC031CB /* Pods-reserveMyStuffTests-acknowledgements.plist */,
+				E4D75779FFE3014CBB7A8DE35BF4B5C6 /* Pods-reserveMyStuffTests-dummy.m */,
+				B50D8EA90DD14BCECA2997300ECB7CF5 /* Pods-reserveMyStuffTests-Info.plist */,
+				46BB46DEF633BF81AA275BB540373894 /* Pods-reserveMyStuffTests-umbrella.h */,
+				AB497908E1A6C1A795401CB2E1E96047 /* Pods-reserveMyStuffTests.debug.xcconfig */,
+				F1C0202247462DF83ECED63DD0571B7B /* Pods-reserveMyStuffTests.release.xcconfig */,
+			);
+			name = "Pods-reserveMyStuffTests";
+			path = "Target Support Files/Pods-reserveMyStuffTests";
+			sourceTree = "<group>";
+		};
+		1628BF05B4CAFDCC3549A101F5A10A17 /* Frameworks */ = {
+			isa = PBXGroup;
+			children = (
+				E2983683FD097A93297E2F5D4E382B36 /* iOS */,
+			);
+			name = Frameworks;
+			sourceTree = "<group>";
+		};
+		262EC484707A373FFC78A2C0F5BC2BE8 /* Support Files */ = {
+			isa = PBXGroup;
+			children = (
+				560B6B5007AB5064B00387518BAC6A82 /* IoniconsSwift.modulemap */,
+				FD80AAC10C6AB4460475F253132DAEE7 /* IoniconsSwift.xcconfig */,
+				B1D7C785BEA474E67D562E54E22DDBF5 /* IoniconsSwift-dummy.m */,
+				27CE1662426345C4FD5997A9FCA78AC4 /* IoniconsSwift-Info.plist */,
+				FF240CECB96029A5F64A49131E8CD054 /* IoniconsSwift-prefix.pch */,
+				F69158132D122838FF9DBFA71F2AFA97 /* IoniconsSwift-umbrella.h */,
+			);
+			name = "Support Files";
+			path = "../Target Support Files/IoniconsSwift";
+			sourceTree = "<group>";
+		};
+		447A8952AD0205EAACC64A524D0E70BC /* Pods */ = {
+			isa = PBXGroup;
+			children = (
+				CA2A2B22EC8D7C7CFAE23ABC5A9C6002 /* IoniconsSwift */,
+			);
+			name = Pods;
+			sourceTree = "<group>";
+		};
+		84DB823876244E70577F921888045CDC /* Products */ = {
+			isa = PBXGroup;
+			children = (
+				58A22898654CF49A5A980358193A9B70 /* IoniconsSwift.framework */,
+				F8CC6E609A3EEF8D4EDFE482323D97F8 /* Pods_reserveMyStuff.framework */,
+				04F9F0CBEB076B8B6A7C677D3F9DD832 /* Pods_reserveMyStuffTests.framework */,
+			);
+			name = Products;
+			sourceTree = "<group>";
+		};
+		98CCEE66BAA3A786DF9F74A9D3716AB0 /* Pods-reserveMyStuff */ = {
+			isa = PBXGroup;
+			children = (
+				5C1883AB3F1104248EB3AE66AE2DA9B7 /* Pods-reserveMyStuff.modulemap */,
+				41640160E9A488A7612601D02E9CA349 /* Pods-reserveMyStuff-acknowledgements.markdown */,
+				4E5F65AA7891C992F274E8C3E9E9666E /* Pods-reserveMyStuff-acknowledgements.plist */,
+				481E63CE8663AB82DB702BEA7E3FC33C /* Pods-reserveMyStuff-dummy.m */,
+				86AB04F4CAEDDB54D63A1282BDB28AD8 /* Pods-reserveMyStuff-frameworks.sh */,
+				7D2752110FC740A2B9773F85FC9EE1DC /* Pods-reserveMyStuff-Info.plist */,
+				7CCBD85070CE404A513EF643AA30B2DE /* Pods-reserveMyStuff-umbrella.h */,
+				A47759790941D8F69B2C49A0E177A51F /* Pods-reserveMyStuff.debug.xcconfig */,
+				BB348839FCBAE0DDE8842258D04F8C72 /* Pods-reserveMyStuff.release.xcconfig */,
+			);
+			name = "Pods-reserveMyStuff";
+			path = "Target Support Files/Pods-reserveMyStuff";
+			sourceTree = "<group>";
+		};
+		AB7F98D5C73307395873CE6008C17ED9 /* Targets Support Files */ = {
+			isa = PBXGroup;
+			children = (
+				98CCEE66BAA3A786DF9F74A9D3716AB0 /* Pods-reserveMyStuff */,
+				0B0853E101F916955E4FAD769D74AB69 /* Pods-reserveMyStuffTests */,
+			);
+			name = "Targets Support Files";
+			sourceTree = "<group>";
+		};
+		CA2A2B22EC8D7C7CFAE23ABC5A9C6002 /* IoniconsSwift */ = {
+			isa = PBXGroup;
+			children = (
+				19A03BC5A54BFDD1FE27BEEC4185544D /* ionicons.swift */,
+				E4BB5FECFE8F5B5A5BB55276D5D1E7D4 /* Resources */,
+				262EC484707A373FFC78A2C0F5BC2BE8 /* Support Files */,
+			);
+			path = IoniconsSwift;
+			sourceTree = "<group>";
+		};
+		CF1408CF629C7361332E53B88F7BD30C = {
+			isa = PBXGroup;
+			children = (
+				9D940727FF8FB9C785EB98E56350EF41 /* Podfile */,
+				1628BF05B4CAFDCC3549A101F5A10A17 /* Frameworks */,
+				447A8952AD0205EAACC64A524D0E70BC /* Pods */,
+				84DB823876244E70577F921888045CDC /* Products */,
+				AB7F98D5C73307395873CE6008C17ED9 /* Targets Support Files */,
+			);
+			sourceTree = "<group>";
+		};
+		E2983683FD097A93297E2F5D4E382B36 /* iOS */ = {
+			isa = PBXGroup;
+			children = (
+				436BAA54A31999B53B3CC7115C55FE50 /* Foundation.framework */,
+				312B988EF117AE4DE76A268D970131FE /* UIKit.framework */,
+			);
+			name = iOS;
+			sourceTree = "<group>";
+		};
+		E4BB5FECFE8F5B5A5BB55276D5D1E7D4 /* Resources */ = {
+			isa = PBXGroup;
+			children = (
+				94FAEC1C65626339E8F362D673E1C101 /* ionicons.ttf */,
+			);
+			name = Resources;
+			sourceTree = "<group>";
+		};
+/* End PBXGroup section */
+
+/* Begin PBXHeadersBuildPhase section */
+		0574B9E142D5C90CA46C56CF2FADD30F /* Headers */ = {
+			isa = PBXHeadersBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				7141A40955F495B67E9F5D800977D9F9 /* IoniconsSwift-umbrella.h in Headers */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		4FCC7E81A8155F9B2D22D4F975019B4E /* Headers */ = {
+			isa = PBXHeadersBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				F40D8C4F0AD1CE5300D4B229B64A0223 /* Pods-reserveMyStuffTests-umbrella.h in Headers */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		AC63983B32FD0F1966D32BCE7FF077AE /* Headers */ = {
+			isa = PBXHeadersBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				03644CC41A3B7AA04D88EAE4C87973F5 /* Pods-reserveMyStuff-umbrella.h in Headers */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXHeadersBuildPhase section */
+
+/* Begin PBXNativeTarget section */
+		28580BA6189212B19A89367B55D3A51E /* Pods-reserveMyStuff */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = B9A207E3DF681833231E2F8736D4C941 /* Build configuration list for PBXNativeTarget "Pods-reserveMyStuff" */;
+			buildPhases = (
+				AC63983B32FD0F1966D32BCE7FF077AE /* Headers */,
+				5ADE0616E63C6C2076E5366EF42ABDB3 /* Sources */,
+				E8DCB7BA2B8FD98874A8F19D6ED02E9D /* Frameworks */,
+				3214F57CB0F9F6DB10737D5734BB2C51 /* Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+				94EA26DE8806F6663961031E84D423AA /* PBXTargetDependency */,
+			);
+			name = "Pods-reserveMyStuff";
+			productName = "Pods-reserveMyStuff";
+			productReference = F8CC6E609A3EEF8D4EDFE482323D97F8 /* Pods_reserveMyStuff.framework */;
+			productType = "com.apple.product-type.framework";
+		};
+		BD630CC7FA5BBF792863C643D778EFC8 /* IoniconsSwift */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = D71D2574B21D097357D32B20FE2AB368 /* Build configuration list for PBXNativeTarget "IoniconsSwift" */;
+			buildPhases = (
+				0574B9E142D5C90CA46C56CF2FADD30F /* Headers */,
+				CF45764BCF97F19A0DE51F1773F79844 /* Sources */,
+				7CC57959D4650B5C0395EDC797DEED27 /* Frameworks */,
+				D231F069F07C37683074AC5864E9C984 /* Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+			);
+			name = IoniconsSwift;
+			productName = IoniconsSwift;
+			productReference = 58A22898654CF49A5A980358193A9B70 /* IoniconsSwift.framework */;
+			productType = "com.apple.product-type.framework";
+		};
+		D02D4AFB7097494FDD66BCDE13A3F179 /* Pods-reserveMyStuffTests */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = EA52AED5129EF4CB9853AE4C4C90C57A /* Build configuration list for PBXNativeTarget "Pods-reserveMyStuffTests" */;
+			buildPhases = (
+				4FCC7E81A8155F9B2D22D4F975019B4E /* Headers */,
+				7C1137BBDCD864C5E635883858B7D375 /* Sources */,
+				7D03A79E06DE4402D0CF681E8B801B75 /* Frameworks */,
+				F6F4CF4F4D0AF2813992D9B9DFC6F9C8 /* Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+				EAD68703722A540096307FA8855124EA /* PBXTargetDependency */,
+			);
+			name = "Pods-reserveMyStuffTests";
+			productName = "Pods-reserveMyStuffTests";
+			productReference = 04F9F0CBEB076B8B6A7C677D3F9DD832 /* Pods_reserveMyStuffTests.framework */;
+			productType = "com.apple.product-type.framework";
+		};
+/* End PBXNativeTarget section */
+
+/* Begin PBXProject section */
+		BFDFE7DC352907FC980B868725387E98 /* Project object */ = {
+			isa = PBXProject;
+			attributes = {
+				LastSwiftUpdateCheck = 1100;
+				LastUpgradeCheck = 1100;
+			};
+			buildConfigurationList = 4821239608C13582E20E6DA73FD5F1F9 /* Build configuration list for PBXProject "Pods" */;
+			compatibilityVersion = "Xcode 9.3";
+			developmentRegion = en;
+			hasScannedForEncodings = 0;
+			knownRegions = (
+				en,
+				Base,
+			);
+			mainGroup = CF1408CF629C7361332E53B88F7BD30C;
+			productRefGroup = 84DB823876244E70577F921888045CDC /* Products */;
+			projectDirPath = "";
+			projectRoot = "";
+			targets = (
+				BD630CC7FA5BBF792863C643D778EFC8 /* IoniconsSwift */,
+				28580BA6189212B19A89367B55D3A51E /* Pods-reserveMyStuff */,
+				D02D4AFB7097494FDD66BCDE13A3F179 /* Pods-reserveMyStuffTests */,
+			);
+		};
+/* End PBXProject section */
+
+/* Begin PBXResourcesBuildPhase section */
+		3214F57CB0F9F6DB10737D5734BB2C51 /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		D231F069F07C37683074AC5864E9C984 /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				B34FA3E729F8781DF0F9EA9F934C4CEF /* ionicons.ttf in Resources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		F6F4CF4F4D0AF2813992D9B9DFC6F9C8 /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXResourcesBuildPhase section */
+
+/* Begin PBXSourcesBuildPhase section */
+		5ADE0616E63C6C2076E5366EF42ABDB3 /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				BE7B6C470B351B840C3A5982BDBD1812 /* Pods-reserveMyStuff-dummy.m in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		7C1137BBDCD864C5E635883858B7D375 /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				8A3CD2752D08F7A6CAC95E9538243F2B /* Pods-reserveMyStuffTests-dummy.m in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		CF45764BCF97F19A0DE51F1773F79844 /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				E895489CB35C02F3583B859B254D54D3 /* ionicons.swift in Sources */,
+				B2174B5E0564FB10C477026635B9AA40 /* IoniconsSwift-dummy.m in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXSourcesBuildPhase section */
+
+/* Begin PBXTargetDependency section */
+		94EA26DE8806F6663961031E84D423AA /* PBXTargetDependency */ = {
+			isa = PBXTargetDependency;
+			name = IoniconsSwift;
+			target = BD630CC7FA5BBF792863C643D778EFC8 /* IoniconsSwift */;
+			targetProxy = 9A18EFBCBCE9415A45E1009E3ADDBA40 /* PBXContainerItemProxy */;
+		};
+		EAD68703722A540096307FA8855124EA /* PBXTargetDependency */ = {
+			isa = PBXTargetDependency;
+			name = "Pods-reserveMyStuff";
+			target = 28580BA6189212B19A89367B55D3A51E /* Pods-reserveMyStuff */;
+			targetProxy = 32EA657D5F5EBC0A1DF754E3D69D129C /* PBXContainerItemProxy */;
+		};
+/* End PBXTargetDependency section */
+
+/* Begin XCBuildConfiguration section */
+		053C18C5DF3A4AB5E3B509F1CFE0B328 /* Release */ = {
+			isa = XCBuildConfiguration;
+			baseConfigurationReference = BB348839FCBAE0DDE8842258D04F8C72 /* Pods-reserveMyStuff.release.xcconfig */;
+			buildSettings = {
+				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = NO;
+				CLANG_ENABLE_OBJC_WEAK = NO;
+				CODE_SIGN_IDENTITY = "";
+				"CODE_SIGN_IDENTITY[sdk=appletvos*]" = "";
+				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "";
+				"CODE_SIGN_IDENTITY[sdk=watchos*]" = "";
+				CURRENT_PROJECT_VERSION = 1;
+				DEFINES_MODULE = YES;
+				DYLIB_COMPATIBILITY_VERSION = 1;
+				DYLIB_CURRENT_VERSION = 1;
+				DYLIB_INSTALL_NAME_BASE = "@rpath";
+				INFOPLIST_FILE = "Target Support Files/Pods-reserveMyStuff/Pods-reserveMyStuff-Info.plist";
+				INSTALL_PATH = "$(LOCAL_LIBRARY_DIR)/Frameworks";
+				IPHONEOS_DEPLOYMENT_TARGET = 13.4;
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+					"@loader_path/Frameworks",
+				);
+				MACH_O_TYPE = staticlib;
+				MODULEMAP_FILE = "Target Support Files/Pods-reserveMyStuff/Pods-reserveMyStuff.modulemap";
+				OTHER_LDFLAGS = "";
+				OTHER_LIBTOOLFLAGS = "";
+				PODS_ROOT = "$(SRCROOT)";
+				PRODUCT_BUNDLE_IDENTIFIER = "org.cocoapods.${PRODUCT_NAME:rfc1034identifier}";
+				PRODUCT_NAME = "$(TARGET_NAME:c99extidentifier)";
+				SDKROOT = iphoneos;
+				SKIP_INSTALL = YES;
+				TARGETED_DEVICE_FAMILY = "1,2";
+				VALIDATE_PRODUCT = YES;
+				VERSIONING_SYSTEM = "apple-generic";
+				VERSION_INFO_PREFIX = "";
+			};
+			name = Release;
+		};
+		6C61D818ACD3C2C116FED6A9C67E91B4 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				CLANG_ANALYZER_NONNULL = YES;
+				CLANG_ANALYZER_NUMBER_OBJECT_CONVERSION = YES_AGGRESSIVE;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++14";
+				CLANG_CXX_LIBRARY = "libc++";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_ENABLE_OBJC_WEAK = YES;
+				CLANG_WARN_BLOCK_CAPTURE_AUTORELEASING = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_COMMA = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DEPRECATED_OBJC_IMPLEMENTATIONS = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
+				CLANG_WARN_DOCUMENTATION_COMMENTS = YES;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INFINITE_RECURSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_NON_LITERAL_NULL_CONVERSION = YES;
+				CLANG_WARN_OBJC_IMPLICIT_RETAIN_SELF = YES;
+				CLANG_WARN_OBJC_LITERAL_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN_RANGE_LOOP_ANALYSIS = YES;
+				CLANG_WARN_STRICT_PROTOTYPES = YES;
+				CLANG_WARN_SUSPICIOUS_MOVE = YES;
+				CLANG_WARN_UNGUARDED_AVAILABILITY = YES_AGGRESSIVE;
+				CLANG_WARN_UNREACHABLE_CODE = YES;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				COPY_PHASE_STRIP = NO;
+				DEBUG_INFORMATION_FORMAT = dwarf;
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				ENABLE_TESTABILITY = YES;
+				GCC_C_LANGUAGE_STANDARD = gnu11;
+				GCC_DYNAMIC_NO_PIC = NO;
+				GCC_NO_COMMON_BLOCKS = YES;
+				GCC_OPTIMIZATION_LEVEL = 0;
+				GCC_PREPROCESSOR_DEFINITIONS = (
+					"POD_CONFIGURATION_DEBUG=1",
+					"DEBUG=1",
+					"$(inherited)",
+				);
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 13.4;
+				MTL_ENABLE_DEBUG_INFO = INCLUDE_SOURCE;
+				MTL_FAST_MATH = YES;
+				ONLY_ACTIVE_ARCH = YES;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				STRIP_INSTALLED_PRODUCT = NO;
+				SWIFT_ACTIVE_COMPILATION_CONDITIONS = DEBUG;
+				SWIFT_OPTIMIZATION_LEVEL = "-Onone";
+				SWIFT_VERSION = 5.0;
+				SYMROOT = "${SRCROOT}/../build";
+			};
+			name = Debug;
+		};
+		7DC5F11AFBEAE473E8D3C24A2D11338D /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				CLANG_ANALYZER_NONNULL = YES;
+				CLANG_ANALYZER_NUMBER_OBJECT_CONVERSION = YES_AGGRESSIVE;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++14";
+				CLANG_CXX_LIBRARY = "libc++";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_ENABLE_OBJC_WEAK = YES;
+				CLANG_WARN_BLOCK_CAPTURE_AUTORELEASING = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_COMMA = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DEPRECATED_OBJC_IMPLEMENTATIONS = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
+				CLANG_WARN_DOCUMENTATION_COMMENTS = YES;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INFINITE_RECURSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_NON_LITERAL_NULL_CONVERSION = YES;
+				CLANG_WARN_OBJC_IMPLICIT_RETAIN_SELF = YES;
+				CLANG_WARN_OBJC_LITERAL_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN_RANGE_LOOP_ANALYSIS = YES;
+				CLANG_WARN_STRICT_PROTOTYPES = YES;
+				CLANG_WARN_SUSPICIOUS_MOVE = YES;
+				CLANG_WARN_UNGUARDED_AVAILABILITY = YES_AGGRESSIVE;
+				CLANG_WARN_UNREACHABLE_CODE = YES;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				COPY_PHASE_STRIP = NO;
+				DEBUG_INFORMATION_FORMAT = "dwarf-with-dsym";
+				ENABLE_NS_ASSERTIONS = NO;
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				GCC_C_LANGUAGE_STANDARD = gnu11;
+				GCC_NO_COMMON_BLOCKS = YES;
+				GCC_PREPROCESSOR_DEFINITIONS = (
+					"POD_CONFIGURATION_RELEASE=1",
+					"$(inherited)",
+				);
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 13.4;
+				MTL_ENABLE_DEBUG_INFO = NO;
+				MTL_FAST_MATH = YES;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				STRIP_INSTALLED_PRODUCT = NO;
+				SWIFT_COMPILATION_MODE = wholemodule;
+				SWIFT_OPTIMIZATION_LEVEL = "-O";
+				SWIFT_VERSION = 5.0;
+				SYMROOT = "${SRCROOT}/../build";
+			};
+			name = Release;
+		};
+		A477DBEB4B0CC538784A2ACA32CBFF24 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			baseConfigurationReference = AB497908E1A6C1A795401CB2E1E96047 /* Pods-reserveMyStuffTests.debug.xcconfig */;
+			buildSettings = {
+				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = NO;
+				CLANG_ENABLE_OBJC_WEAK = NO;
+				CODE_SIGN_IDENTITY = "";
+				"CODE_SIGN_IDENTITY[sdk=appletvos*]" = "";
+				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "";
+				"CODE_SIGN_IDENTITY[sdk=watchos*]" = "";
+				CURRENT_PROJECT_VERSION = 1;
+				DEFINES_MODULE = YES;
+				DYLIB_COMPATIBILITY_VERSION = 1;
+				DYLIB_CURRENT_VERSION = 1;
+				DYLIB_INSTALL_NAME_BASE = "@rpath";
+				INFOPLIST_FILE = "Target Support Files/Pods-reserveMyStuffTests/Pods-reserveMyStuffTests-Info.plist";
+				INSTALL_PATH = "$(LOCAL_LIBRARY_DIR)/Frameworks";
+				IPHONEOS_DEPLOYMENT_TARGET = 13.4;
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+					"@loader_path/Frameworks",
+				);
+				MACH_O_TYPE = staticlib;
+				MODULEMAP_FILE = "Target Support Files/Pods-reserveMyStuffTests/Pods-reserveMyStuffTests.modulemap";
+				OTHER_LDFLAGS = "";
+				OTHER_LIBTOOLFLAGS = "";
+				PODS_ROOT = "$(SRCROOT)";
+				PRODUCT_BUNDLE_IDENTIFIER = "org.cocoapods.${PRODUCT_NAME:rfc1034identifier}";
+				PRODUCT_NAME = "$(TARGET_NAME:c99extidentifier)";
+				SDKROOT = iphoneos;
+				SKIP_INSTALL = YES;
+				TARGETED_DEVICE_FAMILY = "1,2";
+				VERSIONING_SYSTEM = "apple-generic";
+				VERSION_INFO_PREFIX = "";
+			};
+			name = Debug;
+		};
+		B10BB1C0A8196A98FBC008AF8FAA3124 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			baseConfigurationReference = A47759790941D8F69B2C49A0E177A51F /* Pods-reserveMyStuff.debug.xcconfig */;
+			buildSettings = {
+				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = NO;
+				CLANG_ENABLE_OBJC_WEAK = NO;
+				CODE_SIGN_IDENTITY = "";
+				"CODE_SIGN_IDENTITY[sdk=appletvos*]" = "";
+				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "";
+				"CODE_SIGN_IDENTITY[sdk=watchos*]" = "";
+				CURRENT_PROJECT_VERSION = 1;
+				DEFINES_MODULE = YES;
+				DYLIB_COMPATIBILITY_VERSION = 1;
+				DYLIB_CURRENT_VERSION = 1;
+				DYLIB_INSTALL_NAME_BASE = "@rpath";
+				INFOPLIST_FILE = "Target Support Files/Pods-reserveMyStuff/Pods-reserveMyStuff-Info.plist";
+				INSTALL_PATH = "$(LOCAL_LIBRARY_DIR)/Frameworks";
+				IPHONEOS_DEPLOYMENT_TARGET = 13.4;
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+					"@loader_path/Frameworks",
+				);
+				MACH_O_TYPE = staticlib;
+				MODULEMAP_FILE = "Target Support Files/Pods-reserveMyStuff/Pods-reserveMyStuff.modulemap";
+				OTHER_LDFLAGS = "";
+				OTHER_LIBTOOLFLAGS = "";
+				PODS_ROOT = "$(SRCROOT)";
+				PRODUCT_BUNDLE_IDENTIFIER = "org.cocoapods.${PRODUCT_NAME:rfc1034identifier}";
+				PRODUCT_NAME = "$(TARGET_NAME:c99extidentifier)";
+				SDKROOT = iphoneos;
+				SKIP_INSTALL = YES;
+				TARGETED_DEVICE_FAMILY = "1,2";
+				VERSIONING_SYSTEM = "apple-generic";
+				VERSION_INFO_PREFIX = "";
+			};
+			name = Debug;
+		};
+		C56CC173C8CB65961AC92E0C5078545C /* Release */ = {
+			isa = XCBuildConfiguration;
+			baseConfigurationReference = FD80AAC10C6AB4460475F253132DAEE7 /* IoniconsSwift.xcconfig */;
+			buildSettings = {
+				CODE_SIGN_IDENTITY = "";
+				"CODE_SIGN_IDENTITY[sdk=appletvos*]" = "";
+				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "";
+				"CODE_SIGN_IDENTITY[sdk=watchos*]" = "";
+				CURRENT_PROJECT_VERSION = 1;
+				DEFINES_MODULE = YES;
+				DYLIB_COMPATIBILITY_VERSION = 1;
+				DYLIB_CURRENT_VERSION = 1;
+				DYLIB_INSTALL_NAME_BASE = "@rpath";
+				GCC_PREFIX_HEADER = "Target Support Files/IoniconsSwift/IoniconsSwift-prefix.pch";
+				INFOPLIST_FILE = "Target Support Files/IoniconsSwift/IoniconsSwift-Info.plist";
+				INSTALL_PATH = "$(LOCAL_LIBRARY_DIR)/Frameworks";
+				IPHONEOS_DEPLOYMENT_TARGET = 8.0;
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+					"@loader_path/Frameworks",
+				);
+				MODULEMAP_FILE = "Target Support Files/IoniconsSwift/IoniconsSwift.modulemap";
+				PRODUCT_MODULE_NAME = IoniconsSwift;
+				PRODUCT_NAME = IoniconsSwift;
+				SDKROOT = iphoneos;
+				SKIP_INSTALL = YES;
+				SWIFT_ACTIVE_COMPILATION_CONDITIONS = "$(inherited) ";
+				SWIFT_VERSION = 5.0;
+				TARGETED_DEVICE_FAMILY = "1,2";
+				VALIDATE_PRODUCT = YES;
+				VERSIONING_SYSTEM = "apple-generic";
+				VERSION_INFO_PREFIX = "";
+			};
+			name = Release;
+		};
+		D99333644BA3245EB398765F552F4320 /* Release */ = {
+			isa = XCBuildConfiguration;
+			baseConfigurationReference = F1C0202247462DF83ECED63DD0571B7B /* Pods-reserveMyStuffTests.release.xcconfig */;
+			buildSettings = {
+				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = NO;
+				CLANG_ENABLE_OBJC_WEAK = NO;
+				CODE_SIGN_IDENTITY = "";
+				"CODE_SIGN_IDENTITY[sdk=appletvos*]" = "";
+				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "";
+				"CODE_SIGN_IDENTITY[sdk=watchos*]" = "";
+				CURRENT_PROJECT_VERSION = 1;
+				DEFINES_MODULE = YES;
+				DYLIB_COMPATIBILITY_VERSION = 1;
+				DYLIB_CURRENT_VERSION = 1;
+				DYLIB_INSTALL_NAME_BASE = "@rpath";
+				INFOPLIST_FILE = "Target Support Files/Pods-reserveMyStuffTests/Pods-reserveMyStuffTests-Info.plist";
+				INSTALL_PATH = "$(LOCAL_LIBRARY_DIR)/Frameworks";
+				IPHONEOS_DEPLOYMENT_TARGET = 13.4;
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+					"@loader_path/Frameworks",
+				);
+				MACH_O_TYPE = staticlib;
+				MODULEMAP_FILE = "Target Support Files/Pods-reserveMyStuffTests/Pods-reserveMyStuffTests.modulemap";
+				OTHER_LDFLAGS = "";
+				OTHER_LIBTOOLFLAGS = "";
+				PODS_ROOT = "$(SRCROOT)";
+				PRODUCT_BUNDLE_IDENTIFIER = "org.cocoapods.${PRODUCT_NAME:rfc1034identifier}";
+				PRODUCT_NAME = "$(TARGET_NAME:c99extidentifier)";
+				SDKROOT = iphoneos;
+				SKIP_INSTALL = YES;
+				TARGETED_DEVICE_FAMILY = "1,2";
+				VALIDATE_PRODUCT = YES;
+				VERSIONING_SYSTEM = "apple-generic";
+				VERSION_INFO_PREFIX = "";
+			};
+			name = Release;
+		};
+		EC2075B8AE05BF94D46762F3D20DAEC0 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			baseConfigurationReference = FD80AAC10C6AB4460475F253132DAEE7 /* IoniconsSwift.xcconfig */;
+			buildSettings = {
+				CODE_SIGN_IDENTITY = "";
+				"CODE_SIGN_IDENTITY[sdk=appletvos*]" = "";
+				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "";
+				"CODE_SIGN_IDENTITY[sdk=watchos*]" = "";
+				CURRENT_PROJECT_VERSION = 1;
+				DEFINES_MODULE = YES;
+				DYLIB_COMPATIBILITY_VERSION = 1;
+				DYLIB_CURRENT_VERSION = 1;
+				DYLIB_INSTALL_NAME_BASE = "@rpath";
+				GCC_PREFIX_HEADER = "Target Support Files/IoniconsSwift/IoniconsSwift-prefix.pch";
+				INFOPLIST_FILE = "Target Support Files/IoniconsSwift/IoniconsSwift-Info.plist";
+				INSTALL_PATH = "$(LOCAL_LIBRARY_DIR)/Frameworks";
+				IPHONEOS_DEPLOYMENT_TARGET = 8.0;
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+					"@loader_path/Frameworks",
+				);
+				MODULEMAP_FILE = "Target Support Files/IoniconsSwift/IoniconsSwift.modulemap";
+				PRODUCT_MODULE_NAME = IoniconsSwift;
+				PRODUCT_NAME = IoniconsSwift;
+				SDKROOT = iphoneos;
+				SKIP_INSTALL = YES;
+				SWIFT_ACTIVE_COMPILATION_CONDITIONS = "$(inherited) ";
+				SWIFT_VERSION = 5.0;
+				TARGETED_DEVICE_FAMILY = "1,2";
+				VERSIONING_SYSTEM = "apple-generic";
+				VERSION_INFO_PREFIX = "";
+			};
+			name = Debug;
+		};
+/* End XCBuildConfiguration section */
+
+/* Begin XCConfigurationList section */
+		4821239608C13582E20E6DA73FD5F1F9 /* Build configuration list for PBXProject "Pods" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				6C61D818ACD3C2C116FED6A9C67E91B4 /* Debug */,
+				7DC5F11AFBEAE473E8D3C24A2D11338D /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		B9A207E3DF681833231E2F8736D4C941 /* Build configuration list for PBXNativeTarget "Pods-reserveMyStuff" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				B10BB1C0A8196A98FBC008AF8FAA3124 /* Debug */,
+				053C18C5DF3A4AB5E3B509F1CFE0B328 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		D71D2574B21D097357D32B20FE2AB368 /* Build configuration list for PBXNativeTarget "IoniconsSwift" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				EC2075B8AE05BF94D46762F3D20DAEC0 /* Debug */,
+				C56CC173C8CB65961AC92E0C5078545C /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		EA52AED5129EF4CB9853AE4C4C90C57A /* Build configuration list for PBXNativeTarget "Pods-reserveMyStuffTests" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				A477DBEB4B0CC538784A2ACA32CBFF24 /* Debug */,
+				D99333644BA3245EB398765F552F4320 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+/* End XCConfigurationList section */
+	};
+	rootObject = BFDFE7DC352907FC980B868725387E98 /* Project object */;
+}
