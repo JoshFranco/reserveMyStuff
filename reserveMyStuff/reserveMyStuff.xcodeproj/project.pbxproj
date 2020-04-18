@@ -48,6 +48,7 @@
 		DA537C44244AB3C100BF6900 /* UserDefaults+Extension.swift in Sources */ = {isa = PBXBuildFile; fileRef = DA537C43244AB3C100BF6900 /* UserDefaults+Extension.swift */; };
 		DA7F5FDA244A58DD00D9D693 /* R.generated.swift in Sources */ = {isa = PBXBuildFile; fileRef = DA7F5FD9244A58DD00D9D693 /* R.generated.swift */; };
 		DA7F5FDC244A5B1F00D9D693 /* Colors.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = DA7F5FDB244A5B1F00D9D693 /* Colors.xcassets */; };
+		DA806C56244AD1DA00F7C04B /* Date+Extension.swift in Sources */ = {isa = PBXBuildFile; fileRef = DA806C55244AD1DA00F7C04B /* Date+Extension.swift */; };
 		DA938431244A5F4300EA2CF7 /* Localizable.strings in Resources */ = {isa = PBXBuildFile; fileRef = DA938430244A5F4300EA2CF7 /* Localizable.strings */; };
 		DA938434244A624000EA2CF7 /* ReservationTableViewCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = DA938432244A624000EA2CF7 /* ReservationTableViewCell.swift */; };
 		DA938435244A624000EA2CF7 /* ReservationTableViewCell.xib in Resources */ = {isa = PBXBuildFile; fileRef = DA938433244A624000EA2CF7 /* ReservationTableViewCell.xib */; };
@@ -122,6 +123,7 @@
 		DA537C43244AB3C100BF6900 /* UserDefaults+Extension.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "UserDefaults+Extension.swift"; sourceTree = "<group>"; };
 		DA7F5FD9244A58DD00D9D693 /* R.generated.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = R.generated.swift; sourceTree = SOURCE_ROOT; };
 		DA7F5FDB244A5B1F00D9D693 /* Colors.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Colors.xcassets; sourceTree = "<group>"; };
+		DA806C55244AD1DA00F7C04B /* Date+Extension.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "Date+Extension.swift"; sourceTree = "<group>"; };
 		DA938430244A5F4300EA2CF7 /* Localizable.strings */ = {isa = PBXFileReference; lastKnownFileType = text.plist.strings; path = Localizable.strings; sourceTree = "<group>"; };
 		DA938432244A624000EA2CF7 /* ReservationTableViewCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ReservationTableViewCell.swift; sourceTree = "<group>"; };
 		DA938433244A624000EA2CF7 /* ReservationTableViewCell.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; path = ReservationTableViewCell.xib; sourceTree = "<group>"; };
@@ -382,6 +384,7 @@
 			isa = PBXGroup;
 			children = (
 				DA537C43244AB3C100BF6900 /* UserDefaults+Extension.swift */,
+				DA806C55244AD1DA00F7C04B /* Date+Extension.swift */,
 			);
 			path = Extensions;
 			sourceTree = "<group>";
@@ -407,8 +410,8 @@
 		DA93843B244A795C00EA2CF7 /* Schedule */ = {
 			isa = PBXGroup;
 			children = (
-				DA938449244A957400EA2CF7 /* Time of Day Container */,
 				DA938448244A955D00EA2CF7 /* Month Container */,
+				DA938449244A957400EA2CF7 /* Time of Day Container */,
 				DA93843C244A797000EA2CF7 /* ScheduleViewController.swift */,
 			);
 			path = Schedule;
@@ -649,6 +652,7 @@
 				DA3A4A64244A313400D7D660 /* MockSession.swift in Sources */,
 				DA938441244A8BA100EA2CF7 /* TimeOfDayViewController.swift in Sources */,
 				DA3A4A5F244A313400D7D660 /* Mockable.swift in Sources */,
+				DA806C56244AD1DA00F7C04B /* Date+Extension.swift in Sources */,
 				DA3A4A0E244A2CDF00D7D660 /* reserveMyStuff.xcdatamodeld in Sources */,
 				DA3A4A32244A2DCE00D7D660 /* Coordinator.swift in Sources */,
 				DA537C3F244AB2A400BF6900 /* NetworkManager.swift in Sources */,

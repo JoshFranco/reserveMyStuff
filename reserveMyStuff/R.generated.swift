@@ -285,7 +285,7 @@ struct R: Rswift.Validatable {
 
   /// This `R.string` struct is generated, and contains static references to 1 localization tables.
   struct string {
-    /// This `R.string.localizable` struct is generated, and contains static references to 6 localization keys.
+    /// This `R.string.localizable` struct is generated, and contains static references to 7 localization keys.
     struct localizable {
       /// Value: %@H
       static let hours = Rswift.StringResource(key: "hours", tableName: "Localizable", bundle: R.hostingBundle, locales: [], comment: nil)
@@ -299,6 +299,8 @@ struct R: Rswift.Validatable {
       static let reservationOptions = Rswift.StringResource(key: "reservation-options", tableName: "Localizable", bundle: R.hostingBundle, locales: [], comment: nil)
       /// Value: Schedule
       static let schedule = Rswift.StringResource(key: "schedule", tableName: "Localizable", bundle: R.hostingBundle, locales: [], comment: nil)
+      /// Value: View Calendar
+      static let viewCalendar = Rswift.StringResource(key: "view-calendar", tableName: "Localizable", bundle: R.hostingBundle, locales: [], comment: nil)
 
       /// Value: %@H
       static func hours(_ value1: String, preferredLanguages: [String]? = nil) -> String {
@@ -380,6 +382,19 @@ struct R: Rswift.Validatable {
         return NSLocalizedString("schedule", bundle: bundle, comment: "")
       }
 
+      /// Value: View Calendar
+      static func viewCalendar(preferredLanguages: [String]? = nil) -> String {
+        guard let preferredLanguages = preferredLanguages else {
+          return NSLocalizedString("view-calendar", bundle: hostingBundle, comment: "")
+        }
+
+        guard let (_, bundle) = localeBundle(tableName: "Localizable", preferredLanguages: preferredLanguages) else {
+          return "view-calendar"
+        }
+
+        return NSLocalizedString("view-calendar", bundle: bundle, comment: "")
+      }
+
       fileprivate init() {}
     }
 
@@ -402,13 +417,20 @@ struct R: Rswift.Validatable {
 struct _R: Rswift.Validatable {
   static func validate() throws {
     #if os(iOS) || os(tvOS)
+    try nib.validate()
+    #endif
+    #if os(iOS) || os(tvOS)
     try storyboard.validate()
     #endif
   }
 
   #if os(iOS) || os(tvOS)
-  struct nib {
-    struct _MonthCollectionViewCell: Rswift.NibResourceType, Rswift.ReuseIdentifierType {
+  struct nib: Rswift.Validatable {
+    static func validate() throws {
+      try _MonthCollectionViewCell.validate()
+    }
+
+    struct _MonthCollectionViewCell: Rswift.NibResourceType, Rswift.ReuseIdentifierType, Rswift.Validatable {
       typealias ReusableType = MonthCollectionViewCell
 
       let bundle = R.hostingBundle
@@ -417,6 +439,13 @@ struct _R: Rswift.Validatable {
 
       func firstView(owner ownerOrNil: AnyObject?, options optionsOrNil: [UINib.OptionsKey : Any]? = nil) -> MonthCollectionViewCell? {
         return instantiate(withOwner: ownerOrNil, options: optionsOrNil)[0] as? MonthCollectionViewCell
+      }
+
+      static func validate() throws {
+        if UIKit.UIImage(named: "checkmark.circle", in: R.hostingBundle, compatibleWith: nil) == nil { throw Rswift.ValidationError(description: "[R.swift] Image named 'checkmark.circle' is used in nib 'MonthCollectionViewCell', but couldn't be loaded.") }
+        if #available(iOS 11.0, tvOS 11.0, *) {
+          if UIKit.UIColor(named: "hardBlue", in: R.hostingBundle, compatibleWith: nil) == nil { throw Rswift.ValidationError(description: "[R.swift] Color named 'hardBlue' is used in storyboard 'MonthCollectionViewCell', but couldn't be loaded.") }
+        }
       }
 
       fileprivate init() {}

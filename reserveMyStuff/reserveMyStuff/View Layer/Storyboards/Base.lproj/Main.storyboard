@@ -305,6 +305,9 @@
                                                 <rect key="frame" x="216" y="0.0" width="158" height="40"/>
                                                 <fontDescription key="fontDescription" name="HelveticaNeue" family="Helvetica Neue" pointSize="16"/>
                                                 <state key="normal" title="View Some Calendar?"/>
+                                                <connections>
+                                                    <action selector="calBtnPress:" destination="cF0-fs-q42" eventType="touchUpInside" id="cq5-7W-lIL"/>
+                                                </connections>
                                             </button>
                                         </subviews>
                                         <color key="backgroundColor" white="0.0" alpha="0.0" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
@@ -358,7 +361,9 @@
                         <viewLayoutGuide key="safeArea" id="7G0-Vo-Bjo"/>
                     </view>
                     <connections>
+                        <outlet property="calBtn" destination="ae1-99-uSr" id="17f-OJ-Vgl"/>
                         <outlet property="collectionView" destination="V5i-hc-mla" id="Msd-WP-BJI"/>
+                        <outlet property="monthLabel" destination="LPH-uw-lBD" id="cVM-vJ-8Lo"/>
                     </connections>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="ORX-gY-nNe" userLabel="First Responder" customClass="UIResponder" sceneMemberID="firstResponder"/>

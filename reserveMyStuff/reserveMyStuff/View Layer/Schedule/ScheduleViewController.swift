@@ -103,10 +103,12 @@ private extension ScheduleViewController {
             self.reservationTitleLabel.text = reservation.title
             self.descriptionLabel.text = reservation.description
             self.partySizeTextField.text = "1"
+            self.pickerPartySizeValue = "1"
             
             if let firstDurationOption = reservation.durationOptions.first {
                 let firstOption = R.string.localizable.hours("\(Int(firstDurationOption))")
                 self.durationTextField.text = firstOption
+                self.pickerDuraitonValue = firstOption
             }
         }
     }

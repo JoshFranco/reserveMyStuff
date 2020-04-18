@@ -33,7 +33,7 @@
                                     <stackView opaque="NO" contentMode="scaleToFill" axis="vertical" alignment="center" spacing="4" translatesAutoresizingMaskIntoConstraints="NO" id="60W-F1-2p4">
                                         <rect key="frame" x="89" y="110" width="83.5" height="46"/>
                                         <subviews>
-                                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Some Day" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="tM0-kO-e2i">
+                                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Some Day" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" minimumFontSize="9" translatesAutoresizingMaskIntoConstraints="NO" id="tM0-kO-e2i">
                                                 <rect key="frame" x="0.0" y="0.0" width="83.5" height="21"/>
                                                 <fontDescription key="fontDescription" name="HelveticaNeue" family="Helvetica Neue" pointSize="18"/>
                                                 <color key="textColor" white="0.0" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
@@ -47,11 +47,31 @@
                                             </label>
                                         </subviews>
                                     </stackView>
+                                    <view hidden="YES" alpha="0.75" contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="Zne-re-yQH">
+                                        <rect key="frame" x="0.0" y="0.0" width="261" height="266"/>
+                                        <color key="backgroundColor" name="hardBlue"/>
+                                    </view>
+                                    <imageView hidden="YES" clipsSubviews="YES" userInteractionEnabled="NO" contentMode="scaleAspectFit" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="checkmark.circle" catalog="system" translatesAutoresizingMaskIntoConstraints="NO" id="nch-M9-ooP">
+                                        <rect key="frame" x="108.5" y="111.5" width="44" height="43"/>
+                                        <color key="tintColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                                        <constraints>
+                                            <constraint firstAttribute="height" constant="44" id="AOh-6f-vbn"/>
+                                            <constraint firstAttribute="width" constant="44" id="n0f-NH-0Lh"/>
+                                        </constraints>
+                                    </imageView>
                                 </subviews>
                                 <color key="backgroundColor" systemColor="systemBackgroundColor" cocoaTouchSystemColor="whiteColor"/>
                                 <constraints>
+                                    <constraint firstAttribute="trailing" secondItem="Zne-re-yQH" secondAttribute="trailing" id="0Er-Xf-JTu"/>
+                                    <constraint firstItem="Zne-re-yQH" firstAttribute="leading" secondItem="k9C-da-Gxs" secondAttribute="leading" id="11c-gT-Na0"/>
                                     <constraint firstItem="60W-F1-2p4" firstAttribute="centerX" secondItem="k9C-da-Gxs" secondAttribute="centerX" id="F2L-Ne-MEG"/>
                                     <constraint firstItem="60W-F1-2p4" firstAttribute="centerY" secondItem="k9C-da-Gxs" secondAttribute="centerY" id="XJq-0T-AlC"/>
+                                    <constraint firstAttribute="trailing" relation="greaterThanOrEqual" secondItem="60W-F1-2p4" secondAttribute="trailing" id="aku-Og-RkV"/>
+                                    <constraint firstAttribute="bottom" secondItem="Zne-re-yQH" secondAttribute="bottom" id="eWD-Sv-j72"/>
+                                    <constraint firstItem="Zne-re-yQH" firstAttribute="top" secondItem="k9C-da-Gxs" secondAttribute="top" id="h0b-z4-kiT"/>
+                                    <constraint firstItem="nch-M9-ooP" firstAttribute="centerY" secondItem="Zne-re-yQH" secondAttribute="centerY" id="huJ-xn-gZe"/>
+                                    <constraint firstItem="60W-F1-2p4" firstAttribute="leading" relation="greaterThanOrEqual" secondItem="k9C-da-Gxs" secondAttribute="leading" id="lJb-dt-kJm"/>
+                                    <constraint firstItem="nch-M9-ooP" firstAttribute="centerX" secondItem="Zne-re-yQH" secondAttribute="centerX" id="yR3-tE-dTT"/>
                                 </constraints>
                             </view>
                         </subviews>
@@ -76,10 +96,17 @@
             </constraints>
             <viewLayoutGuide key="safeArea" id="ZTg-uK-7eu"/>
             <size key="customSize" width="261" height="290"/>
+            <connections>
+                <outlet property="dayOfMonthLabel" destination="yJO-B3-ZHm" id="FyN-l8-2aK"/>
+                <outlet property="dayOfWeekLabel" destination="tM0-kO-e2i" id="2rb-hO-dXs"/>
+                <outletCollection property="isSelectedViews" destination="Zne-re-yQH" collectionClass="NSMutableArray" id="aI3-EQ-XUp"/>
+                <outletCollection property="isSelectedViews" destination="nch-M9-ooP" collectionClass="NSMutableArray" id="p75-zV-JtL"/>
+            </connections>
             <point key="canvasLocation" x="293.47826086956525" y="233.70535714285714"/>
         </collectionViewCell>
     </objects>
     <resources>
+        <image name="checkmark.circle" catalog="system" width="128" height="121"/>
         <namedColor name="hardBlue">
             <color red="0.0078431372549019607" green="0.41960784313725491" blue="0.77254901960784317" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
         </namedColor>
