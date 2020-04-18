@@ -7,14 +7,13 @@
 //
 
 import UIKit
-import IoniconsSwift
 
 class ReservationsTableViewController: UITableViewController, Storyboarded, Navigatable {
     static var storyboard: Storyboards = .main
     var navigation: ((Route, UIViewController?) -> Void)?
     
     enum Route {
-        case none
+        case add
     }
     
     // MARK: - Overrides
@@ -26,8 +25,7 @@ class ReservationsTableViewController: UITableViewController, Storyboarded, Navi
     
     // MARK: - Actions
     @objc private func addBtnPress() {
-        print("hit")
-        
+        self.navigate(.add)
     }
     
     // MARK: - Table view data source    
@@ -54,7 +52,7 @@ private extension ReservationsTableViewController {
 
         let addBtnItem = UIBarButtonItem(barButtonSystemItem: .add, target: self, action: #selector(addBtnPress))
         addBtnItem.tintColor = .white
-        navigationItem.rightBarButtonItem = addBtnItem
+        self.navigationItem.rightBarButtonItem = addBtnItem
         
         let reservationNib = UINib(nibName: "ReservationTableViewCell", bundle: nil)
         self.tableView.register(reservationNib, forCellReuseIdentifier: "ReservationTableViewCell")

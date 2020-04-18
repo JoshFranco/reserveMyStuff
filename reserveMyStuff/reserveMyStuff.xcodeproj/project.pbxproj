@@ -49,6 +49,15 @@
 		DA938431244A5F4300EA2CF7 /* Localizable.strings in Resources */ = {isa = PBXBuildFile; fileRef = DA938430244A5F4300EA2CF7 /* Localizable.strings */; };
 		DA938434244A624000EA2CF7 /* ReservationTableViewCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = DA938432244A624000EA2CF7 /* ReservationTableViewCell.swift */; };
 		DA938435244A624000EA2CF7 /* ReservationTableViewCell.xib in Resources */ = {isa = PBXBuildFile; fileRef = DA938433244A624000EA2CF7 /* ReservationTableViewCell.xib */; };
+		DA938438244A72EE00EA2CF7 /* Reservation.swift in Sources */ = {isa = PBXBuildFile; fileRef = DA938437244A72EE00EA2CF7 /* Reservation.swift */; };
+		DA93843A244A745300EA2CF7 /* ReservationOption.swift in Sources */ = {isa = PBXBuildFile; fileRef = DA938439244A745300EA2CF7 /* ReservationOption.swift */; };
+		DA93843D244A797000EA2CF7 /* ScheduleViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = DA93843C244A797000EA2CF7 /* ScheduleViewController.swift */; };
+		DA93843F244A8B9600EA2CF7 /* MonthViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = DA93843E244A8B9600EA2CF7 /* MonthViewController.swift */; };
+		DA938441244A8BA100EA2CF7 /* TimeOfDayViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = DA938440244A8BA100EA2CF7 /* TimeOfDayViewController.swift */; };
+		DA938446244A8E2B00EA2CF7 /* MonthCollectionViewCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = DA938444244A8E2B00EA2CF7 /* MonthCollectionViewCell.swift */; };
+		DA938447244A8E2B00EA2CF7 /* MonthCollectionViewCell.xib in Resources */ = {isa = PBXBuildFile; fileRef = DA938445244A8E2B00EA2CF7 /* MonthCollectionViewCell.xib */; };
+		DA93844C244A959100EA2CF7 /* TimeOfDayCollectionViewCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = DA93844A244A959100EA2CF7 /* TimeOfDayCollectionViewCell.swift */; };
+		DA93844D244A959100EA2CF7 /* TimeOfDayCollectionViewCell.xib in Resources */ = {isa = PBXBuildFile; fileRef = DA93844B244A959100EA2CF7 /* TimeOfDayCollectionViewCell.xib */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -111,6 +120,15 @@
 		DA938430244A5F4300EA2CF7 /* Localizable.strings */ = {isa = PBXFileReference; lastKnownFileType = text.plist.strings; path = Localizable.strings; sourceTree = "<group>"; };
 		DA938432244A624000EA2CF7 /* ReservationTableViewCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ReservationTableViewCell.swift; sourceTree = "<group>"; };
 		DA938433244A624000EA2CF7 /* ReservationTableViewCell.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; path = ReservationTableViewCell.xib; sourceTree = "<group>"; };
+		DA938437244A72EE00EA2CF7 /* Reservation.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Reservation.swift; sourceTree = "<group>"; };
+		DA938439244A745300EA2CF7 /* ReservationOption.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ReservationOption.swift; sourceTree = "<group>"; };
+		DA93843C244A797000EA2CF7 /* ScheduleViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ScheduleViewController.swift; sourceTree = "<group>"; };
+		DA93843E244A8B9600EA2CF7 /* MonthViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MonthViewController.swift; sourceTree = "<group>"; };
+		DA938440244A8BA100EA2CF7 /* TimeOfDayViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TimeOfDayViewController.swift; sourceTree = "<group>"; };
+		DA938444244A8E2B00EA2CF7 /* MonthCollectionViewCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MonthCollectionViewCell.swift; sourceTree = "<group>"; };
+		DA938445244A8E2B00EA2CF7 /* MonthCollectionViewCell.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; path = MonthCollectionViewCell.xib; sourceTree = "<group>"; };
+		DA93844A244A959100EA2CF7 /* TimeOfDayCollectionViewCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TimeOfDayCollectionViewCell.swift; sourceTree = "<group>"; };
+		DA93844B244A959100EA2CF7 /* TimeOfDayCollectionViewCell.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; path = TimeOfDayCollectionViewCell.xib; sourceTree = "<group>"; };
 		DF0094A84B71C05EFECCD25F /* Pods-reserveMyStuff.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-reserveMyStuff.release.xcconfig"; path = "Target Support Files/Pods-reserveMyStuff/Pods-reserveMyStuff.release.xcconfig"; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
@@ -197,6 +215,7 @@
 		DA3A4A02244A2CDF00D7D660 /* reserveMyStuff */ = {
 			isa = PBXGroup;
 			children = (
+				DA938436244A72D900EA2CF7 /* Models */,
 				DA3A4A28244A2D2200D7D660 /* Data Layer */,
 				DA3A4A67244A35F800D7D660 /* Extensions */,
 				DA3A4A2A244A2D3E00D7D660 /* Navigation Layer */,
@@ -205,8 +224,8 @@
 				DA3A4A2B244A2D4700D7D660 /* View Layer */,
 				DA3A4A03244A2CDF00D7D660 /* AppDelegate.swift */,
 				DA3A4A05244A2CDF00D7D660 /* SceneDelegate.swift */,
-				DA3A4A14244A2CE100D7D660 /* Info.plist */,
 				DA7F5FD9244A58DD00D9D693 /* R.generated.swift */,
+				DA3A4A14244A2CE100D7D660 /* Info.plist */,
 			);
 			path = reserveMyStuff;
 			sourceTree = "<group>";
@@ -252,6 +271,7 @@
 		DA3A4A2B244A2D4700D7D660 /* View Layer */ = {
 			isa = PBXGroup;
 			children = (
+				DA93843B244A795C00EA2CF7 /* Schedule */,
 				DA0A3C07244A3CDA0037BE0B /* Reservations */,
 				DA3A4A2C244A2D5200D7D660 /* Storyboards */,
 			);
@@ -358,6 +378,45 @@
 			path = Extensions;
 			sourceTree = "<group>";
 		};
+		DA938436244A72D900EA2CF7 /* Models */ = {
+			isa = PBXGroup;
+			children = (
+				DA938437244A72EE00EA2CF7 /* Reservation.swift */,
+				DA938439244A745300EA2CF7 /* ReservationOption.swift */,
+			);
+			path = Models;
+			sourceTree = "<group>";
+		};
+		DA93843B244A795C00EA2CF7 /* Schedule */ = {
+			isa = PBXGroup;
+			children = (
+				DA938449244A957400EA2CF7 /* Time of Day Container */,
+				DA938448244A955D00EA2CF7 /* Month Container */,
+				DA93843C244A797000EA2CF7 /* ScheduleViewController.swift */,
+			);
+			path = Schedule;
+			sourceTree = "<group>";
+		};
+		DA938448244A955D00EA2CF7 /* Month Container */ = {
+			isa = PBXGroup;
+			children = (
+				DA93843E244A8B9600EA2CF7 /* MonthViewController.swift */,
+				DA938444244A8E2B00EA2CF7 /* MonthCollectionViewCell.swift */,
+				DA938445244A8E2B00EA2CF7 /* MonthCollectionViewCell.xib */,
+			);
+			path = "Month Container";
+			sourceTree = "<group>";
+		};
+		DA938449244A957400EA2CF7 /* Time of Day Container */ = {
+			isa = PBXGroup;
+			children = (
+				DA938440244A8BA100EA2CF7 /* TimeOfDayViewController.swift */,
+				DA93844A244A959100EA2CF7 /* TimeOfDayCollectionViewCell.swift */,
+				DA93844B244A959100EA2CF7 /* TimeOfDayCollectionViewCell.xib */,
+			);
+			path = "Time of Day Container";
+			sourceTree = "<group>";
+		};
 /* End PBXGroup section */
 
 /* Begin PBXNativeTarget section */
@@ -444,8 +503,10 @@
 			buildActionMask = 2147483647;
 			files = (
 				DA7F5FDC244A5B1F00D9D693 /* Colors.xcassets in Resources */,
+				DA938447244A8E2B00EA2CF7 /* MonthCollectionViewCell.xib in Resources */,
 				DA938431244A5F4300EA2CF7 /* Localizable.strings in Resources */,
 				DA3A4A13244A2CE100D7D660 /* LaunchScreen.storyboard in Resources */,
+				DA93844D244A959100EA2CF7 /* TimeOfDayCollectionViewCell.xib in Resources */,
 				DA3A4A10244A2CE100D7D660 /* Assets.xcassets in Resources */,
 				DA3A4A0B244A2CDF00D7D660 /* Main.storyboard in Resources */,
 				DA938435244A624000EA2CF7 /* ReservationTableViewCell.xib in Resources */,
@@ -556,16 +617,22 @@
 				DA7F5FDA244A58DD00D9D693 /* R.generated.swift in Sources */,
 				DA3A4A61244A313400D7D660 /* NetworkRoutable.swift in Sources */,
 				DA3A4A33244A2DCE00D7D660 /* Navigatable.swift in Sources */,
+				DA93843D244A797000EA2CF7 /* ScheduleViewController.swift in Sources */,
 				DA3A4A5A244A313400D7D660 /* URLRequest+Common+Extension.swift in Sources */,
 				DA3A4A64244A313400D7D660 /* MockSession.swift in Sources */,
+				DA938441244A8BA100EA2CF7 /* TimeOfDayViewController.swift in Sources */,
 				DA3A4A5F244A313400D7D660 /* Mockable.swift in Sources */,
 				DA3A4A0E244A2CDF00D7D660 /* reserveMyStuff.xcdatamodeld in Sources */,
 				DA3A4A32244A2DCE00D7D660 /* Coordinator.swift in Sources */,
 				DA3A4A56244A313400D7D660 /* EmptyOperation.swift in Sources */,
 				DA3A4A31244A2DCE00D7D660 /* Storyboarded.swift in Sources */,
 				DA0A3074244A3E46000D953A /* AppCoordinator.swift in Sources */,
+				DA93843A244A745300EA2CF7 /* ReservationOption.swift in Sources */,
 				DA0A3C06244A3C850037BE0B /* ReservationsTableViewController.swift in Sources */,
+				DA938438244A72EE00EA2CF7 /* Reservation.swift in Sources */,
+				DA93843F244A8B9600EA2CF7 /* MonthViewController.swift in Sources */,
 				DA938434244A624000EA2CF7 /* ReservationTableViewCell.swift in Sources */,
+				DA93844C244A959100EA2CF7 /* TimeOfDayCollectionViewCell.swift in Sources */,
 				DA3A4A58244A313400D7D660 /* DecodableOperation.swift in Sources */,
 				DA3A4A04244A2CDF00D7D660 /* AppDelegate.swift in Sources */,
 				DA3A4A53244A313400D7D660 /* ParametersEncoding.swift in Sources */,
@@ -581,6 +648,7 @@
 				DA3A4A54244A313400D7D660 /* HTTPMethod.swift in Sources */,
 				DA3A4A5D244A313400D7D660 /* URL+Common+Extension.swift in Sources */,
 				DA3A4A52244A313400D7D660 /* JXGoogleRouter.swift in Sources */,
+				DA938446244A8E2B00EA2CF7 /* MonthCollectionViewCell.swift in Sources */,
 				DA3A4A06244A2CDF00D7D660 /* SceneDelegate.swift in Sources */,
 				DA3A4A51244A313400D7D660 /* JobUnitV2Router.swift in Sources */,
 			);

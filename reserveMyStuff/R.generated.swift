@@ -200,10 +200,37 @@ struct R: Rswift.Validatable {
     fileprivate init() {}
   }
 
-  /// This `R.nib` struct is generated, and contains static references to 1 nibs.
+  /// This `R.image` struct is generated, and contains static references to 1 images.
+  struct image {
+    /// Image `placeholder`.
+    static let placeholder = Rswift.ImageResource(bundle: R.hostingBundle, name: "placeholder")
+
+    #if os(iOS) || os(tvOS)
+    /// `UIImage(named: "placeholder", bundle: ..., traitCollection: ...)`
+    static func placeholder(compatibleWith traitCollection: UIKit.UITraitCollection? = nil) -> UIKit.UIImage? {
+      return UIKit.UIImage(resource: R.image.placeholder, compatibleWith: traitCollection)
+    }
+    #endif
+
+    fileprivate init() {}
+  }
+
+  /// This `R.nib` struct is generated, and contains static references to 3 nibs.
   struct nib {
+    /// Nib `MonthCollectionViewCell`.
+    static let monthCollectionViewCell = _R.nib._MonthCollectionViewCell()
     /// Nib `ReservationTableViewCell`.
     static let reservationTableViewCell = _R.nib._ReservationTableViewCell()
+    /// Nib `TimeOfDayCollectionViewCell`.
+    static let timeOfDayCollectionViewCell = _R.nib._TimeOfDayCollectionViewCell()
+
+    #if os(iOS) || os(tvOS)
+    /// `UINib(name: "MonthCollectionViewCell", in: bundle)`
+    @available(*, deprecated, message: "Use UINib(resource: R.nib.monthCollectionViewCell) instead")
+    static func monthCollectionViewCell(_: Void = ()) -> UIKit.UINib {
+      return UIKit.UINib(resource: R.nib.monthCollectionViewCell)
+    }
+    #endif
 
     #if os(iOS) || os(tvOS)
     /// `UINib(name: "ReservationTableViewCell", in: bundle)`
@@ -213,27 +240,49 @@ struct R: Rswift.Validatable {
     }
     #endif
 
+    #if os(iOS) || os(tvOS)
+    /// `UINib(name: "TimeOfDayCollectionViewCell", in: bundle)`
+    @available(*, deprecated, message: "Use UINib(resource: R.nib.timeOfDayCollectionViewCell) instead")
+    static func timeOfDayCollectionViewCell(_: Void = ()) -> UIKit.UINib {
+      return UIKit.UINib(resource: R.nib.timeOfDayCollectionViewCell)
+    }
+    #endif
+
+    static func monthCollectionViewCell(owner ownerOrNil: AnyObject?, options optionsOrNil: [UINib.OptionsKey : Any]? = nil) -> MonthCollectionViewCell? {
+      return R.nib.monthCollectionViewCell.instantiate(withOwner: ownerOrNil, options: optionsOrNil)[0] as? MonthCollectionViewCell
+    }
+
     static func reservationTableViewCell(owner ownerOrNil: AnyObject?, options optionsOrNil: [UINib.OptionsKey : Any]? = nil) -> ReservationTableViewCell? {
       return R.nib.reservationTableViewCell.instantiate(withOwner: ownerOrNil, options: optionsOrNil)[0] as? ReservationTableViewCell
+    }
+
+    static func timeOfDayCollectionViewCell(owner ownerOrNil: AnyObject?, options optionsOrNil: [UINib.OptionsKey : Any]? = nil) -> TimeOfDayCollectionViewCell? {
+      return R.nib.timeOfDayCollectionViewCell.instantiate(withOwner: ownerOrNil, options: optionsOrNil)[0] as? TimeOfDayCollectionViewCell
     }
 
     fileprivate init() {}
   }
 
-  /// This `R.reuseIdentifier` struct is generated, and contains static references to 1 reuse identifiers.
+  /// This `R.reuseIdentifier` struct is generated, and contains static references to 3 reuse identifiers.
   struct reuseIdentifier {
+    /// Reuse identifier `MonthCollectionViewCell`.
+    static let monthCollectionViewCell: Rswift.ReuseIdentifier<MonthCollectionViewCell> = Rswift.ReuseIdentifier(identifier: "MonthCollectionViewCell")
     /// Reuse identifier `ReservationTableViewCell`.
     static let reservationTableViewCell: Rswift.ReuseIdentifier<ReservationTableViewCell> = Rswift.ReuseIdentifier(identifier: "ReservationTableViewCell")
+    /// Reuse identifier `TimeOfDayCollectionViewCell`.
+    static let timeOfDayCollectionViewCell: Rswift.ReuseIdentifier<TimeOfDayCollectionViewCell> = Rswift.ReuseIdentifier(identifier: "TimeOfDayCollectionViewCell")
 
     fileprivate init() {}
   }
 
   /// This `R.string` struct is generated, and contains static references to 1 localization tables.
   struct string {
-    /// This `R.string.localizable` struct is generated, and contains static references to 1 localization keys.
+    /// This `R.string.localizable` struct is generated, and contains static references to 2 localization keys.
     struct localizable {
       /// Value: My Reservations
       static let myReservations = Rswift.StringResource(key: "my-reservations", tableName: "Localizable", bundle: R.hostingBundle, locales: [], comment: nil)
+      /// Value: Schedule
+      static let schedule = Rswift.StringResource(key: "schedule", tableName: "Localizable", bundle: R.hostingBundle, locales: [], comment: nil)
 
       /// Value: My Reservations
       static func myReservations(preferredLanguages: [String]? = nil) -> String {
@@ -246,6 +295,19 @@ struct R: Rswift.Validatable {
         }
 
         return NSLocalizedString("my-reservations", bundle: bundle, comment: "")
+      }
+
+      /// Value: Schedule
+      static func schedule(preferredLanguages: [String]? = nil) -> String {
+        guard let preferredLanguages = preferredLanguages else {
+          return NSLocalizedString("schedule", bundle: hostingBundle, comment: "")
+        }
+
+        guard let (_, bundle) = localeBundle(tableName: "Localizable", preferredLanguages: preferredLanguages) else {
+          return "schedule"
+        }
+
+        return NSLocalizedString("schedule", bundle: bundle, comment: "")
       }
 
       fileprivate init() {}
@@ -276,6 +338,20 @@ struct _R: Rswift.Validatable {
 
   #if os(iOS) || os(tvOS)
   struct nib {
+    struct _MonthCollectionViewCell: Rswift.NibResourceType, Rswift.ReuseIdentifierType {
+      typealias ReusableType = MonthCollectionViewCell
+
+      let bundle = R.hostingBundle
+      let identifier = "MonthCollectionViewCell"
+      let name = "MonthCollectionViewCell"
+
+      func firstView(owner ownerOrNil: AnyObject?, options optionsOrNil: [UINib.OptionsKey : Any]? = nil) -> MonthCollectionViewCell? {
+        return instantiate(withOwner: ownerOrNil, options: optionsOrNil)[0] as? MonthCollectionViewCell
+      }
+
+      fileprivate init() {}
+    }
+
     struct _ReservationTableViewCell: Rswift.NibResourceType, Rswift.ReuseIdentifierType {
       typealias ReusableType = ReservationTableViewCell
 
@@ -285,6 +361,20 @@ struct _R: Rswift.Validatable {
 
       func firstView(owner ownerOrNil: AnyObject?, options optionsOrNil: [UINib.OptionsKey : Any]? = nil) -> ReservationTableViewCell? {
         return instantiate(withOwner: ownerOrNil, options: optionsOrNil)[0] as? ReservationTableViewCell
+      }
+
+      fileprivate init() {}
+    }
+
+    struct _TimeOfDayCollectionViewCell: Rswift.NibResourceType, Rswift.ReuseIdentifierType {
+      typealias ReusableType = TimeOfDayCollectionViewCell
+
+      let bundle = R.hostingBundle
+      let identifier = "TimeOfDayCollectionViewCell"
+      let name = "TimeOfDayCollectionViewCell"
+
+      func firstView(owner ownerOrNil: AnyObject?, options optionsOrNil: [UINib.OptionsKey : Any]? = nil) -> TimeOfDayCollectionViewCell? {
+        return instantiate(withOwner: ownerOrNil, options: optionsOrNil)[0] as? TimeOfDayCollectionViewCell
       }
 
       fileprivate init() {}
@@ -326,17 +416,41 @@ struct _R: Rswift.Validatable {
       typealias InitialController = ReservationsTableViewController
 
       let bundle = R.hostingBundle
+      let monthViewController = StoryboardViewControllerResource<MonthViewController>(identifier: "MonthViewController")
       let name = "Main"
       let reservationsTableViewController = StoryboardViewControllerResource<ReservationsTableViewController>(identifier: "ReservationsTableViewController")
+      let scheduleViewController = StoryboardViewControllerResource<ScheduleViewController>(identifier: "ScheduleViewController")
+      let timeOfDayViewController = StoryboardViewControllerResource<TimeOfDayViewController>(identifier: "TimeOfDayViewController")
+
+      func monthViewController(_: Void = ()) -> MonthViewController? {
+        return UIKit.UIStoryboard(resource: self).instantiateViewController(withResource: monthViewController)
+      }
 
       func reservationsTableViewController(_: Void = ()) -> ReservationsTableViewController? {
         return UIKit.UIStoryboard(resource: self).instantiateViewController(withResource: reservationsTableViewController)
       }
 
+      func scheduleViewController(_: Void = ()) -> ScheduleViewController? {
+        return UIKit.UIStoryboard(resource: self).instantiateViewController(withResource: scheduleViewController)
+      }
+
+      func timeOfDayViewController(_: Void = ()) -> TimeOfDayViewController? {
+        return UIKit.UIStoryboard(resource: self).instantiateViewController(withResource: timeOfDayViewController)
+      }
+
       static func validate() throws {
+        if UIKit.UIImage(named: "placeholder", in: R.hostingBundle, compatibleWith: nil) == nil { throw Rswift.ValidationError(description: "[R.swift] Image named 'placeholder' is used in storyboard 'Main', but couldn't be loaded.") }
         if #available(iOS 11.0, tvOS 11.0, *) {
+          if UIKit.UIColor(named: "hardBlue", in: R.hostingBundle, compatibleWith: nil) == nil { throw Rswift.ValidationError(description: "[R.swift] Color named 'hardBlue' is used in storyboard 'Main', but couldn't be loaded.") }
+          if UIKit.UIColor(named: "offWhite", in: R.hostingBundle, compatibleWith: nil) == nil { throw Rswift.ValidationError(description: "[R.swift] Color named 'offWhite' is used in storyboard 'Main', but couldn't be loaded.") }
+          if UIKit.UIColor(named: "subTitleGray", in: R.hostingBundle, compatibleWith: nil) == nil { throw Rswift.ValidationError(description: "[R.swift] Color named 'subTitleGray' is used in storyboard 'Main', but couldn't be loaded.") }
+          if UIKit.UIColor(named: "textGray", in: R.hostingBundle, compatibleWith: nil) == nil { throw Rswift.ValidationError(description: "[R.swift] Color named 'textGray' is used in storyboard 'Main', but couldn't be loaded.") }
+          if UIKit.UIColor(named: "titleGray", in: R.hostingBundle, compatibleWith: nil) == nil { throw Rswift.ValidationError(description: "[R.swift] Color named 'titleGray' is used in storyboard 'Main', but couldn't be loaded.") }
         }
+        if _R.storyboard.main().monthViewController() == nil { throw Rswift.ValidationError(description:"[R.swift] ViewController with identifier 'monthViewController' could not be loaded from storyboard 'Main' as 'MonthViewController'.") }
         if _R.storyboard.main().reservationsTableViewController() == nil { throw Rswift.ValidationError(description:"[R.swift] ViewController with identifier 'reservationsTableViewController' could not be loaded from storyboard 'Main' as 'ReservationsTableViewController'.") }
+        if _R.storyboard.main().scheduleViewController() == nil { throw Rswift.ValidationError(description:"[R.swift] ViewController with identifier 'scheduleViewController' could not be loaded from storyboard 'Main' as 'ScheduleViewController'.") }
+        if _R.storyboard.main().timeOfDayViewController() == nil { throw Rswift.ValidationError(description:"[R.swift] ViewController with identifier 'timeOfDayViewController' could not be loaded from storyboard 'Main' as 'TimeOfDayViewController'.") }
       }
 
       fileprivate init() {}
