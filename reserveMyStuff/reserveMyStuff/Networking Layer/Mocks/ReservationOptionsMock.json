@@ -1,0 +1,15 @@
+
+{
+    "reservation_options" : [
+        {
+            "reservation_option_title": "Hot Stone Massage",
+            "reservation_option_price": 12000,
+            "reservation_option_description": "Massage focused on the deepest layer of muscles to target knots and release chronic muscle tension.",
+            "reservation_option_duration_options": [
+                30,
+                60,
+                70
+            ]
+        }
+    ]
+}

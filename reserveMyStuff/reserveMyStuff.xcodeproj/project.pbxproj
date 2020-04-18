@@ -22,9 +22,6 @@
 		DA3A4A31244A2DCE00D7D660 /* Storyboarded.swift in Sources */ = {isa = PBXBuildFile; fileRef = DA3A4A2E244A2DCE00D7D660 /* Storyboarded.swift */; };
 		DA3A4A32244A2DCE00D7D660 /* Coordinator.swift in Sources */ = {isa = PBXBuildFile; fileRef = DA3A4A2F244A2DCE00D7D660 /* Coordinator.swift */; };
 		DA3A4A33244A2DCE00D7D660 /* Navigatable.swift in Sources */ = {isa = PBXBuildFile; fileRef = DA3A4A30244A2DCE00D7D660 /* Navigatable.swift */; };
-		DA3A4A50244A313400D7D660 /* JXNetworkManager.swift in Sources */ = {isa = PBXBuildFile; fileRef = DA3A4A34244A313400D7D660 /* JXNetworkManager.swift */; };
-		DA3A4A51244A313400D7D660 /* JobUnitV2Router.swift in Sources */ = {isa = PBXBuildFile; fileRef = DA3A4A36244A313400D7D660 /* JobUnitV2Router.swift */; };
-		DA3A4A52244A313400D7D660 /* JXGoogleRouter.swift in Sources */ = {isa = PBXBuildFile; fileRef = DA3A4A37244A313400D7D660 /* JXGoogleRouter.swift */; };
 		DA3A4A53244A313400D7D660 /* ParametersEncoding.swift in Sources */ = {isa = PBXBuildFile; fileRef = DA3A4A3A244A313400D7D660 /* ParametersEncoding.swift */; };
 		DA3A4A54244A313400D7D660 /* HTTPMethod.swift in Sources */ = {isa = PBXBuildFile; fileRef = DA3A4A3B244A313400D7D660 /* HTTPMethod.swift */; };
 		DA3A4A55244A313400D7D660 /* Task.swift in Sources */ = {isa = PBXBuildFile; fileRef = DA3A4A3C244A313400D7D660 /* Task.swift */; };
@@ -43,7 +40,12 @@
 		DA3A4A63244A313400D7D660 /* GMDirectionsMock.json in Resources */ = {isa = PBXBuildFile; fileRef = DA3A4A4E244A313400D7D660 /* GMDirectionsMock.json */; };
 		DA3A4A64244A313400D7D660 /* MockSession.swift in Sources */ = {isa = PBXBuildFile; fileRef = DA3A4A4F244A313400D7D660 /* MockSession.swift */; };
 		DA3A4A66244A327800D7D660 /* NetworkingErrors.swift in Sources */ = {isa = PBXBuildFile; fileRef = DA3A4A65244A327800D7D660 /* NetworkingErrors.swift */; };
-		DA3A4A69244A360900D7D660 /* Result+Extension.swift in Sources */ = {isa = PBXBuildFile; fileRef = DA3A4A68244A360900D7D660 /* Result+Extension.swift */; };
+		DA537C39244AAE5D00BF6900 /* ReservationOptionsRounter.swift in Sources */ = {isa = PBXBuildFile; fileRef = DA537C38244AAE5D00BF6900 /* ReservationOptionsRounter.swift */; };
+		DA537C3B244AAF6800BF6900 /* ReservationOptionsMock.json in Resources */ = {isa = PBXBuildFile; fileRef = DA537C3A244AAF6800BF6900 /* ReservationOptionsMock.json */; };
+		DA537C3D244AB0B800BF6900 /* ReservationOptions.swift in Sources */ = {isa = PBXBuildFile; fileRef = DA537C3C244AB0B800BF6900 /* ReservationOptions.swift */; };
+		DA537C3F244AB2A400BF6900 /* NetworkManager.swift in Sources */ = {isa = PBXBuildFile; fileRef = DA537C3E244AB2A400BF6900 /* NetworkManager.swift */; };
+		DA537C42244AB31000BF6900 /* ReservationService.swift in Sources */ = {isa = PBXBuildFile; fileRef = DA537C41244AB31000BF6900 /* ReservationService.swift */; };
+		DA537C44244AB3C100BF6900 /* UserDefaults+Extension.swift in Sources */ = {isa = PBXBuildFile; fileRef = DA537C43244AB3C100BF6900 /* UserDefaults+Extension.swift */; };
 		DA7F5FDA244A58DD00D9D693 /* R.generated.swift in Sources */ = {isa = PBXBuildFile; fileRef = DA7F5FD9244A58DD00D9D693 /* R.generated.swift */; };
 		DA7F5FDC244A5B1F00D9D693 /* Colors.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = DA7F5FDB244A5B1F00D9D693 /* Colors.xcassets */; };
 		DA938431244A5F4300EA2CF7 /* Localizable.strings in Resources */ = {isa = PBXBuildFile; fileRef = DA938430244A5F4300EA2CF7 /* Localizable.strings */; };
@@ -93,9 +95,6 @@
 		DA3A4A2E244A2DCE00D7D660 /* Storyboarded.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = Storyboarded.swift; sourceTree = "<group>"; };
 		DA3A4A2F244A2DCE00D7D660 /* Coordinator.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = Coordinator.swift; sourceTree = "<group>"; };
 		DA3A4A30244A2DCE00D7D660 /* Navigatable.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = Navigatable.swift; sourceTree = "<group>"; };
-		DA3A4A34244A313400D7D660 /* JXNetworkManager.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = JXNetworkManager.swift; sourceTree = "<group>"; };
-		DA3A4A36244A313400D7D660 /* JobUnitV2Router.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = JobUnitV2Router.swift; sourceTree = "<group>"; };
-		DA3A4A37244A313400D7D660 /* JXGoogleRouter.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = JXGoogleRouter.swift; sourceTree = "<group>"; };
 		DA3A4A3A244A313400D7D660 /* ParametersEncoding.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = ParametersEncoding.swift; sourceTree = "<group>"; };
 		DA3A4A3B244A313400D7D660 /* HTTPMethod.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = HTTPMethod.swift; sourceTree = "<group>"; };
 		DA3A4A3C244A313400D7D660 /* Task.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = Task.swift; sourceTree = "<group>"; };
@@ -114,7 +113,12 @@
 		DA3A4A4E244A313400D7D660 /* GMDirectionsMock.json */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.json; path = GMDirectionsMock.json; sourceTree = "<group>"; };
 		DA3A4A4F244A313400D7D660 /* MockSession.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = MockSession.swift; sourceTree = "<group>"; };
 		DA3A4A65244A327800D7D660 /* NetworkingErrors.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = NetworkingErrors.swift; sourceTree = "<group>"; };
-		DA3A4A68244A360900D7D660 /* Result+Extension.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "Result+Extension.swift"; sourceTree = "<group>"; };
+		DA537C38244AAE5D00BF6900 /* ReservationOptionsRounter.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ReservationOptionsRounter.swift; sourceTree = "<group>"; };
+		DA537C3A244AAF6800BF6900 /* ReservationOptionsMock.json */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.json; path = ReservationOptionsMock.json; sourceTree = "<group>"; };
+		DA537C3C244AB0B800BF6900 /* ReservationOptions.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ReservationOptions.swift; sourceTree = "<group>"; };
+		DA537C3E244AB2A400BF6900 /* NetworkManager.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = NetworkManager.swift; sourceTree = "<group>"; };
+		DA537C41244AB31000BF6900 /* ReservationService.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ReservationService.swift; sourceTree = "<group>"; };
+		DA537C43244AB3C100BF6900 /* UserDefaults+Extension.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "UserDefaults+Extension.swift"; sourceTree = "<group>"; };
 		DA7F5FD9244A58DD00D9D693 /* R.generated.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = R.generated.swift; sourceTree = SOURCE_ROOT; };
 		DA7F5FDB244A5B1F00D9D693 /* Colors.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Colors.xcassets; sourceTree = "<group>"; };
 		DA938430244A5F4300EA2CF7 /* Localizable.strings */ = {isa = PBXFileReference; lastKnownFileType = text.plist.strings; path = Localizable.strings; sourceTree = "<group>"; };
@@ -215,6 +219,7 @@
 		DA3A4A02244A2CDF00D7D660 /* reserveMyStuff */ = {
 			isa = PBXGroup;
 			children = (
+				DA537C40244AB30300BF6900 /* Service Layer */,
 				DA938436244A72D900EA2CF7 /* Models */,
 				DA3A4A28244A2D2200D7D660 /* Data Layer */,
 				DA3A4A67244A35F800D7D660 /* Extensions */,
@@ -253,7 +258,7 @@
 				DA3A4A38244A313400D7D660 /* Core */,
 				DA3A4A4D244A313400D7D660 /* Mocks */,
 				DA3A4A35244A313400D7D660 /* Router */,
-				DA3A4A34244A313400D7D660 /* JXNetworkManager.swift */,
+				DA537C3E244AB2A400BF6900 /* NetworkManager.swift */,
 			);
 			path = "Networking Layer";
 			sourceTree = "<group>";
@@ -300,8 +305,7 @@
 		DA3A4A35244A313400D7D660 /* Router */ = {
 			isa = PBXGroup;
 			children = (
-				DA3A4A36244A313400D7D660 /* JobUnitV2Router.swift */,
-				DA3A4A37244A313400D7D660 /* JXGoogleRouter.swift */,
+				DA537C38244AAE5D00BF6900 /* ReservationOptionsRounter.swift */,
 			);
 			path = Router;
 			sourceTree = "<group>";
@@ -365,6 +369,7 @@
 			isa = PBXGroup;
 			children = (
 				DA3A4A4E244A313400D7D660 /* GMDirectionsMock.json */,
+				DA537C3A244AAF6800BF6900 /* ReservationOptionsMock.json */,
 				DA3A4A4F244A313400D7D660 /* MockSession.swift */,
 			);
 			path = Mocks;
@@ -373,9 +378,17 @@
 		DA3A4A67244A35F800D7D660 /* Extensions */ = {
 			isa = PBXGroup;
 			children = (
-				DA3A4A68244A360900D7D660 /* Result+Extension.swift */,
+				DA537C43244AB3C100BF6900 /* UserDefaults+Extension.swift */,
 			);
 			path = Extensions;
+			sourceTree = "<group>";
+		};
+		DA537C40244AB30300BF6900 /* Service Layer */ = {
+			isa = PBXGroup;
+			children = (
+				DA537C41244AB31000BF6900 /* ReservationService.swift */,
+			);
+			path = "Service Layer";
 			sourceTree = "<group>";
 		};
 		DA938436244A72D900EA2CF7 /* Models */ = {
@@ -383,6 +396,7 @@
 			children = (
 				DA938437244A72EE00EA2CF7 /* Reservation.swift */,
 				DA938439244A745300EA2CF7 /* ReservationOption.swift */,
+				DA537C3C244AB0B800BF6900 /* ReservationOptions.swift */,
 			);
 			path = Models;
 			sourceTree = "<group>";
@@ -511,6 +525,7 @@
 				DA3A4A0B244A2CDF00D7D660 /* Main.storyboard in Resources */,
 				DA938435244A624000EA2CF7 /* ReservationTableViewCell.xib in Resources */,
 				DA3A4A63244A313400D7D660 /* GMDirectionsMock.json in Resources */,
+				DA537C3B244AAF6800BF6900 /* ReservationOptionsMock.json in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -612,8 +627,8 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				DA537C44244AB3C100BF6900 /* UserDefaults+Extension.swift in Sources */,
 				DA3A4A62244A313400D7D660 /* URLSessionProvidable.swift in Sources */,
-				DA3A4A50244A313400D7D660 /* JXNetworkManager.swift in Sources */,
 				DA7F5FDA244A58DD00D9D693 /* R.generated.swift in Sources */,
 				DA3A4A61244A313400D7D660 /* NetworkRoutable.swift in Sources */,
 				DA3A4A33244A2DCE00D7D660 /* Navigatable.swift in Sources */,
@@ -624,6 +639,7 @@
 				DA3A4A5F244A313400D7D660 /* Mockable.swift in Sources */,
 				DA3A4A0E244A2CDF00D7D660 /* reserveMyStuff.xcdatamodeld in Sources */,
 				DA3A4A32244A2DCE00D7D660 /* Coordinator.swift in Sources */,
+				DA537C3F244AB2A400BF6900 /* NetworkManager.swift in Sources */,
 				DA3A4A56244A313400D7D660 /* EmptyOperation.swift in Sources */,
 				DA3A4A31244A2DCE00D7D660 /* Storyboarded.swift in Sources */,
 				DA0A3074244A3E46000D953A /* AppCoordinator.swift in Sources */,
@@ -634,23 +650,23 @@
 				DA938434244A624000EA2CF7 /* ReservationTableViewCell.swift in Sources */,
 				DA93844C244A959100EA2CF7 /* TimeOfDayCollectionViewCell.swift in Sources */,
 				DA3A4A58244A313400D7D660 /* DecodableOperation.swift in Sources */,
+				DA537C42244AB31000BF6900 /* ReservationService.swift in Sources */,
 				DA3A4A04244A2CDF00D7D660 /* AppDelegate.swift in Sources */,
 				DA3A4A53244A313400D7D660 /* ParametersEncoding.swift in Sources */,
 				DA3A4A5C244A313400D7D660 /* URLComponents+Common+Extension.swift in Sources */,
 				DA3A4A5B244A313400D7D660 /* URLSession+Common+Extension.swift in Sources */,
 				DA3A4A57244A313400D7D660 /* Operable.swift in Sources */,
 				DA0A3076244A3F8A000D953A /* MainCoordinator.swift in Sources */,
+				DA537C3D244AB0B800BF6900 /* ReservationOptions.swift in Sources */,
 				DA3A4A5E244A313400D7D660 /* NetworkingConstants.swift in Sources */,
 				DA3A4A55244A313400D7D660 /* Task.swift in Sources */,
-				DA3A4A69244A360900D7D660 /* Result+Extension.swift in Sources */,
+				DA537C39244AAE5D00BF6900 /* ReservationOptionsRounter.swift in Sources */,
 				DA3A4A66244A327800D7D660 /* NetworkingErrors.swift in Sources */,
 				DA3A4A60244A313400D7D660 /* QueueManageable.swift in Sources */,
 				DA3A4A54244A313400D7D660 /* HTTPMethod.swift in Sources */,
 				DA3A4A5D244A313400D7D660 /* URL+Common+Extension.swift in Sources */,
-				DA3A4A52244A313400D7D660 /* JXGoogleRouter.swift in Sources */,
 				DA938446244A8E2B00EA2CF7 /* MonthCollectionViewCell.swift in Sources */,
 				DA3A4A06244A2CDF00D7D660 /* SceneDelegate.swift in Sources */,
-				DA3A4A51244A313400D7D660 /* JobUnitV2Router.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};

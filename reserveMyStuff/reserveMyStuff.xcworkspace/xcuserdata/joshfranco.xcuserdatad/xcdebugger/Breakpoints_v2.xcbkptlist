@@ -36,5 +36,53 @@
             landmarkType = "7">
          </BreakpointContent>
       </BreakpointProxy>
+      <BreakpointProxy
+         BreakpointExtensionID = "Xcode.Breakpoint.FileBreakpoint">
+         <BreakpointContent
+            uuid = "BD60DA14-838E-4815-8D7C-3FDEECC49184"
+            shouldBeEnabled = "Yes"
+            ignoreCount = "0"
+            continueAfterRunningActions = "No"
+            filePath = "reserveMyStuff/Navigation Layer/MainCoordinator.swift"
+            startingColumnNumber = "9223372036854775807"
+            endingColumnNumber = "9223372036854775807"
+            startingLineNumber = "38"
+            endingLineNumber = "38"
+            landmarkName = "unknown"
+            landmarkType = "0">
+            <Locations>
+               <Location
+                  uuid = "BD60DA14-838E-4815-8D7C-3FDEECC49184 - 6a2ab15ebcac8d79"
+                  shouldBeEnabled = "Yes"
+                  ignoreCount = "0"
+                  continueAfterRunningActions = "No"
+                  symbolName = "closure #1 (Swift.Result&lt;reserveMyStuff.ReservationOptions, Swift.Error&gt;) -&gt; () in reserveMyStuff.MainCoordinator.start() -&gt; ()"
+                  moduleName = "reserveMyStuff"
+                  usesParentBreakpointCondition = "Yes"
+                  urlString = "file:///Users/joshfranco/reserveMyStuff/reserveMyStuff/reserveMyStuff/Navigation%20Layer/MainCoordinator.swift"
+                  startingColumnNumber = "9223372036854775807"
+                  endingColumnNumber = "9223372036854775807"
+                  startingLineNumber = "39"
+                  endingLineNumber = "39"
+                  offsetFromSymbolStart = "129">
+               </Location>
+               <Location
+                  uuid = "BD60DA14-838E-4815-8D7C-3FDEECC49184 - 6a2ab15ebcac8d79"
+                  shouldBeEnabled = "Yes"
+                  ignoreCount = "0"
+                  continueAfterRunningActions = "No"
+                  symbolName = "closure #1 (Swift.Result&lt;reserveMyStuff.ReservationOptions, Swift.Error&gt;) -&gt; () in reserveMyStuff.MainCoordinator.start() -&gt; ()"
+                  moduleName = "reserveMyStuff"
+                  usesParentBreakpointCondition = "Yes"
+                  urlString = "file:///Users/joshfranco/reserveMyStuff/reserveMyStuff/reserveMyStuff/Navigation%20Layer/MainCoordinator.swift"
+                  startingColumnNumber = "9223372036854775807"
+                  endingColumnNumber = "9223372036854775807"
+                  startingLineNumber = "39"
+                  endingLineNumber = "39"
+                  offsetFromSymbolStart = "148">
+               </Location>
+            </Locations>
+         </BreakpointContent>
+      </BreakpointProxy>
    </Breakpoints>
 </Bucket>

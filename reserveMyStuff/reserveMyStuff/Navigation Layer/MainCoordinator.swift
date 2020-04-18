@@ -33,6 +33,16 @@ final class MainCoordinator: Coordinator, Navigatable {
     }
     
     func start() {
+        
+        NetworkManager.shared.getReservationOptions { result in
+            switch result {
+            case .success(let options):
+                print(options)
+            case .failure(let error):
+                print(error.localizedDescription)
+            }
+        }
+        
         let reservationsVC = ReservationsTableViewController.instantiate()
         let navController = UINavigationController(rootViewController: reservationsVC)
         self.rootViewController = navController
