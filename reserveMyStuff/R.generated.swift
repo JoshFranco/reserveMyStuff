@@ -285,12 +285,48 @@ struct R: Rswift.Validatable {
 
   /// This `R.string` struct is generated, and contains static references to 1 localization tables.
   struct string {
-    /// This `R.string.localizable` struct is generated, and contains static references to 2 localization keys.
+    /// This `R.string.localizable` struct is generated, and contains static references to 6 localization keys.
     struct localizable {
+      /// Value: %@H
+      static let hours = Rswift.StringResource(key: "hours", tableName: "Localizable", bundle: R.hostingBundle, locales: [], comment: nil)
+      /// Value: Error
+      static let error = Rswift.StringResource(key: "error", tableName: "Localizable", bundle: R.hostingBundle, locales: [], comment: nil)
       /// Value: My Reservations
       static let myReservations = Rswift.StringResource(key: "my-reservations", tableName: "Localizable", bundle: R.hostingBundle, locales: [], comment: nil)
+      /// Value: Party Size
+      static let partySize = Rswift.StringResource(key: "party-size", tableName: "Localizable", bundle: R.hostingBundle, locales: [], comment: nil)
+      /// Value: Reservation Options
+      static let reservationOptions = Rswift.StringResource(key: "reservation-options", tableName: "Localizable", bundle: R.hostingBundle, locales: [], comment: nil)
       /// Value: Schedule
       static let schedule = Rswift.StringResource(key: "schedule", tableName: "Localizable", bundle: R.hostingBundle, locales: [], comment: nil)
+
+      /// Value: %@H
+      static func hours(_ value1: String, preferredLanguages: [String]? = nil) -> String {
+        guard let preferredLanguages = preferredLanguages else {
+          let format = NSLocalizedString("hours", bundle: hostingBundle, comment: "")
+          return String(format: format, locale: applicationLocale, value1)
+        }
+
+        guard let (locale, bundle) = localeBundle(tableName: "Localizable", preferredLanguages: preferredLanguages) else {
+          return "hours"
+        }
+
+        let format = NSLocalizedString("hours", bundle: bundle, comment: "")
+        return String(format: format, locale: locale, value1)
+      }
+
+      /// Value: Error
+      static func error(preferredLanguages: [String]? = nil) -> String {
+        guard let preferredLanguages = preferredLanguages else {
+          return NSLocalizedString("error", bundle: hostingBundle, comment: "")
+        }
+
+        guard let (_, bundle) = localeBundle(tableName: "Localizable", preferredLanguages: preferredLanguages) else {
+          return "error"
+        }
+
+        return NSLocalizedString("error", bundle: bundle, comment: "")
+      }
 
       /// Value: My Reservations
       static func myReservations(preferredLanguages: [String]? = nil) -> String {
@@ -303,6 +339,32 @@ struct R: Rswift.Validatable {
         }
 
         return NSLocalizedString("my-reservations", bundle: bundle, comment: "")
+      }
+
+      /// Value: Party Size
+      static func partySize(preferredLanguages: [String]? = nil) -> String {
+        guard let preferredLanguages = preferredLanguages else {
+          return NSLocalizedString("party-size", bundle: hostingBundle, comment: "")
+        }
+
+        guard let (_, bundle) = localeBundle(tableName: "Localizable", preferredLanguages: preferredLanguages) else {
+          return "party-size"
+        }
+
+        return NSLocalizedString("party-size", bundle: bundle, comment: "")
+      }
+
+      /// Value: Reservation Options
+      static func reservationOptions(preferredLanguages: [String]? = nil) -> String {
+        guard let preferredLanguages = preferredLanguages else {
+          return NSLocalizedString("reservation-options", bundle: hostingBundle, comment: "")
+        }
+
+        guard let (_, bundle) = localeBundle(tableName: "Localizable", preferredLanguages: preferredLanguages) else {
+          return "reservation-options"
+        }
+
+        return NSLocalizedString("reservation-options", bundle: bundle, comment: "")
       }
 
       /// Value: Schedule
@@ -426,12 +488,17 @@ struct _R: Rswift.Validatable {
       let bundle = R.hostingBundle
       let monthViewController = StoryboardViewControllerResource<MonthViewController>(identifier: "MonthViewController")
       let name = "Main"
+      let optionsTableViewController = StoryboardViewControllerResource<OptionsTableViewController>(identifier: "OptionsTableViewController")
       let reservationsTableViewController = StoryboardViewControllerResource<ReservationsTableViewController>(identifier: "ReservationsTableViewController")
       let scheduleViewController = StoryboardViewControllerResource<ScheduleViewController>(identifier: "ScheduleViewController")
       let timeOfDayViewController = StoryboardViewControllerResource<TimeOfDayViewController>(identifier: "TimeOfDayViewController")
 
       func monthViewController(_: Void = ()) -> MonthViewController? {
         return UIKit.UIStoryboard(resource: self).instantiateViewController(withResource: monthViewController)
+      }
+
+      func optionsTableViewController(_: Void = ()) -> OptionsTableViewController? {
+        return UIKit.UIStoryboard(resource: self).instantiateViewController(withResource: optionsTableViewController)
       }
 
       func reservationsTableViewController(_: Void = ()) -> ReservationsTableViewController? {
@@ -456,6 +523,7 @@ struct _R: Rswift.Validatable {
           if UIKit.UIColor(named: "titleGray", in: R.hostingBundle, compatibleWith: nil) == nil { throw Rswift.ValidationError(description: "[R.swift] Color named 'titleGray' is used in storyboard 'Main', but couldn't be loaded.") }
         }
         if _R.storyboard.main().monthViewController() == nil { throw Rswift.ValidationError(description:"[R.swift] ViewController with identifier 'monthViewController' could not be loaded from storyboard 'Main' as 'MonthViewController'.") }
+        if _R.storyboard.main().optionsTableViewController() == nil { throw Rswift.ValidationError(description:"[R.swift] ViewController with identifier 'optionsTableViewController' could not be loaded from storyboard 'Main' as 'OptionsTableViewController'.") }
         if _R.storyboard.main().reservationsTableViewController() == nil { throw Rswift.ValidationError(description:"[R.swift] ViewController with identifier 'reservationsTableViewController' could not be loaded from storyboard 'Main' as 'ReservationsTableViewController'.") }
         if _R.storyboard.main().scheduleViewController() == nil { throw Rswift.ValidationError(description:"[R.swift] ViewController with identifier 'scheduleViewController' could not be loaded from storyboard 'Main' as 'ScheduleViewController'.") }
         if _R.storyboard.main().timeOfDayViewController() == nil { throw Rswift.ValidationError(description:"[R.swift] ViewController with identifier 'timeOfDayViewController' could not be loaded from storyboard 'Main' as 'TimeOfDayViewController'.") }

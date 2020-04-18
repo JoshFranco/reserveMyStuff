@@ -60,6 +60,7 @@
 		DA938447244A8E2B00EA2CF7 /* MonthCollectionViewCell.xib in Resources */ = {isa = PBXBuildFile; fileRef = DA938445244A8E2B00EA2CF7 /* MonthCollectionViewCell.xib */; };
 		DA93844C244A959100EA2CF7 /* TimeOfDayCollectionViewCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = DA93844A244A959100EA2CF7 /* TimeOfDayCollectionViewCell.swift */; };
 		DA93844D244A959100EA2CF7 /* TimeOfDayCollectionViewCell.xib in Resources */ = {isa = PBXBuildFile; fileRef = DA93844B244A959100EA2CF7 /* TimeOfDayCollectionViewCell.xib */; };
+		DAE12030244ABD46002538A5 /* OptionsTableViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = DAE1202F244ABD46002538A5 /* OptionsTableViewController.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -133,6 +134,7 @@
 		DA938445244A8E2B00EA2CF7 /* MonthCollectionViewCell.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; path = MonthCollectionViewCell.xib; sourceTree = "<group>"; };
 		DA93844A244A959100EA2CF7 /* TimeOfDayCollectionViewCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TimeOfDayCollectionViewCell.swift; sourceTree = "<group>"; };
 		DA93844B244A959100EA2CF7 /* TimeOfDayCollectionViewCell.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; path = TimeOfDayCollectionViewCell.xib; sourceTree = "<group>"; };
+		DAE1202F244ABD46002538A5 /* OptionsTableViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = OptionsTableViewController.swift; sourceTree = "<group>"; };
 		DF0094A84B71C05EFECCD25F /* Pods-reserveMyStuff.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-reserveMyStuff.release.xcconfig"; path = "Target Support Files/Pods-reserveMyStuff/Pods-reserveMyStuff.release.xcconfig"; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
@@ -276,6 +278,7 @@
 		DA3A4A2B244A2D4700D7D660 /* View Layer */ = {
 			isa = PBXGroup;
 			children = (
+				DAE1202D244ABD26002538A5 /* Options */,
 				DA93843B244A795C00EA2CF7 /* Schedule */,
 				DA0A3C07244A3CDA0037BE0B /* Reservations */,
 				DA3A4A2C244A2D5200D7D660 /* Storyboards */,
@@ -429,6 +432,14 @@
 				DA93844B244A959100EA2CF7 /* TimeOfDayCollectionViewCell.xib */,
 			);
 			path = "Time of Day Container";
+			sourceTree = "<group>";
+		};
+		DAE1202D244ABD26002538A5 /* Options */ = {
+			isa = PBXGroup;
+			children = (
+				DAE1202F244ABD46002538A5 /* OptionsTableViewController.swift */,
+			);
+			path = Options;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -629,6 +640,7 @@
 			files = (
 				DA537C44244AB3C100BF6900 /* UserDefaults+Extension.swift in Sources */,
 				DA3A4A62244A313400D7D660 /* URLSessionProvidable.swift in Sources */,
+				DAE12030244ABD46002538A5 /* OptionsTableViewController.swift in Sources */,
 				DA7F5FDA244A58DD00D9D693 /* R.generated.swift in Sources */,
 				DA3A4A61244A313400D7D660 /* NetworkRoutable.swift in Sources */,
 				DA3A4A33244A2DCE00D7D660 /* Navigatable.swift in Sources */,

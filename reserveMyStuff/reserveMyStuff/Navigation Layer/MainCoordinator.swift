@@ -15,6 +15,7 @@ final class MainCoordinator: Coordinator, Navigatable {
     
     var window: UIWindow?
     var navigation: ((Route, UIViewController?) -> Void)?
+    weak var mainVC: UIViewController?
     weak var rootViewController: UIViewController? {
         didSet {
             window?.rootViewController = self.rootViewController
@@ -33,24 +34,15 @@ final class MainCoordinator: Coordinator, Navigatable {
     }
     
     func start() {
-        
-        NetworkManager.shared.getReservationOptions { result in
-            switch result {
-            case .success(let options):
-                print(options)
-            case .failure(let error):
-                print(error.localizedDescription)
-            }
-        }
-        
         let reservationsVC = ReservationsTableViewController.instantiate()
         let navController = UINavigationController(rootViewController: reservationsVC)
+        self.mainVC = reservationsVC
         self.rootViewController = navController
         
         reservationsVC.startNavigation { [weak self] (result, coord) in
             switch result {
             case .add:
-                self?.startScheduleVC()
+                self?.startOptionsVC()
             }
         }
     }
@@ -61,17 +53,29 @@ final class MainCoordinator: Coordinator, Navigatable {
 }
 
 private extension MainCoordinator {
-    func startScheduleVC() {
-        let scheduleVC = ScheduleViewController.instantiate()
+    func startOptionsVC() {
+        let optionsVC = OptionsTableViewController.instantiate()
         
-        if let navController = rootViewController as? UINavigationController {
-            navController.navigationItem.backBarButtonItem = UIBarButtonItem(title: "", style: .plain, target: nil, action: nil)
+        self.navigate(to: optionsVC) { [weak self] (result, owner) in
+            switch result {
+            case .optionSelected(let reservation):
+                self?.startScheduleVC(with: reservation)
+            case .back:
+                owner?.navigationController?.popViewController(animated: true)
+            }
         }
+    }
+    
+    func startScheduleVC(with reservation: ReservationOption) {
+        let scheduleVC = ScheduleViewController.instantiate()
+        scheduleVC.config(using: reservation)
         
         self.navigate(to: scheduleVC) { (result, owner) in
             switch result {
             case .reserve:
-                owner?.navigationController?.popViewController(animated: true)
+                if let mainVC = self.mainVC {
+                    owner?.navigationController?.popToViewController(mainVC, animated: true)
+                }
             case .back:
                 owner?.navigationController?.popViewController(animated: true)
             }

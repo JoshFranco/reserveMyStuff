@@ -7,4 +7,8 @@
 */
 
 "my-reservations" = "My Reservations";
+"reservation-options" = "Reservation Options";
 "schedule" = "Schedule";
+"error" = "Error";
+"hours" = "%@H";
+"party-size" = "Party Size";
